@@ -5,7 +5,9 @@ Le but du projet est de prouver qu'une famille défavorisée a beaucoup plus de 
 ## Présentation de l'équipe
 
 |(´・ω・｀)| ( ͡° ͜ʖ ͡°) | ಠ_ಠ | ᕕ( ᐛ )ᕗ |
+|-----|--|--|--|
 |P.Boutonnet |M.BenGhanem| A.DREAU | P.RIEUNIER|
+
  
 ## Description synthétique du projet
 
