@@ -2,14 +2,10 @@
 
 Le but du projet est de prouver qu'une famille défavorisée a beaucoup plus de chance d'accéder à un épanouissement social fort si elle est entourée de famille favorisée dans son environnement quotidien
 
-## English version
-
-Un titre et un résumé en anglais qui reprennent le titre et le résumé en français, mais en anglais pour attirer une audience internationale sur vos travaux !
-
 ## Présentation de l'équipe
 
-|(´・ω・｀)| ( ͡° ͜ʖ ͡°)| 
-P.Boutonnet |M.BenGhanem| A.DREAU  P.RIEUNIER
+|(´・ω・｀)| ( ͡° ͜ʖ ͡°) | ಠ_ಠ | ᕕ( ᐛ )ᕗ |
+|P.Boutonnet |M.BenGhanem| A.DREAU | P.RIEUNIER|
  
 ## Description synthétique du projet
 
@@ -31,6 +27,11 @@ Présentation du choix de modélisation, des outils, du code et des résultats (
 ## Lien vers page de blog : <a href="blog.html"> C'est ici ! </a>
 
 ## Bibliographie :
+https://www.pourlascience.fr/sd/economie/aux-sources-mathematiques-des-inegalites-de-richesse-18601.php (pour la science)
+https://www.researchgate.net/profile/Bruce_Boghosian/publication/301876072_Describing_Realistic_Wealth_Distributions_with_the_Extended_Yard-Sale_Model_of_Asset_Exchange/links/573b77f208ae298602e45796/Describing-Realistic-Wealth-Distributions-with-the-Extended-Yard-Sale-Model-of-Asset-Exchange.pdf(google scholar)
+https://fr.wikipedia.org/wiki/Coefficient_de_Gini (wikipeida)
+https://mathworld.wolfram.com/GiniCoefficient.html (Math World)
+
 
 **Carte mentale de vos mots-clés, en utilisant** <a href="https://framindmap.org/mindmaps/index.html">Framindmap </a> 
 
