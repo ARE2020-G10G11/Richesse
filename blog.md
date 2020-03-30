@@ -8,6 +8,8 @@ Appel facetime avec l'ensemble des membres du projet pour commencer à se répar
 
 ### Semaine 2
 
+Cette semaine nous nous sommes stylisés sur la mise en forme du site internet d'un point de vu visuel (recherche sur internet). De plus nous avons commencé à réfléchir sur le code (version papier crayon). Nous nous sommes rendus compte que cela n'avait rien à voir avec ce que nous avions faisable jusque là en informatique cependant avec un peu de persévérance nous avons réussi à intégrer le code à notre projet courant cette semaine.
+
 ### Semaine 3
 ### ...
 
