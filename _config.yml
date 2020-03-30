@@ -1,21 +1,21 @@
 theme : jekyll-theme-midnight
 titre : Evolution de la Richesse
 logo : DpuISkWWwAElh2U.jpg
-/*! Atelier-cave-dark */
+/*! Tranquil-heart */
 /* Color themes for Google Code Prettify | MIT License | github.com/jmblog/color-themes-for-google-code-prettify */
 .prettyprint {
-  background: #19171c !important;
+  background: #2f3640 !important;
   font-family: Menlo, "Bitstream Vera Sans Mono", "DejaVu Sans Mono", Monaco, Consolas, monospace !important;
   border: 0 !important;
 }
 .pln {
-  color: #efecf4 !important;
+  color: #e6e9ed !important;
 }
 /* Specify class=linenums on a pre to get line numbering */
 ol.linenums {
   margin-top: 0 !important;
   margin-bottom: 0 !important;
-  color: #655f6d !important;
+  color: #656d78 !important;
 }
 li.L0,
 li.L1,
@@ -28,64 +28,65 @@ li.L7,
 li.L8,
 li.L9 {
   padding-left: 1em !important;
-  background-color: #19171c !important;
+  background-color: #2f3640 !important;
   list-style-type: decimal !important;
 }
 @media screen {
   /* string content */
   .str {
-    color: #2a9292 !important;
+    color: #ffce54 !important;
   }
   /* keyword */
   .kwd {
-    color: #955ae7 !important;
+    color: #4fc1e9 !important;
   }
   /* comment */
   .com {
-    color: #655f6d !important;
+    color: #656d78 !important;
   }
   /* type name */
   .typ {
-    color: #576ddb !important;
+    color: #4fc1e9 !important;
   }
   /* literal value */
   .lit {
-    color: #aa573c !important;
+    color: #ac92ec !important;
   }
   /* punctuation */
   .pun {
-    color: #efecf4 !important;
+    color: #e6e9ed !important;
   }
   /* lisp open bracket */
   .opn {
-    color: #efecf4 !important;
+    color: #e6e9ed !important;
   }
   /* lisp close bracket */
   .clo {
-    color: #efecf4 !important;
+    color: #e6e9ed !important;
   }
   /* markup tag name */
   .tag {
-    color: #be4678 !important;
+    color: #ed5565 !important;
   }
   /* markup attribute name */
   .atn {
-    color: #aa573c !important;
+    color: #a0d468 !important;
   }
   /* markup attribute value */
   .atv {
-    color: #398bc6 !important;
+    color: #ffce54 !important;
   }
   /* declaration */
   .dec {
-    color: #aa573c !important;
+    color: #ac92ec !important;
   }
   /* variable name */
   .var {
-    color: #be4678 !important;
+    color: #e6e9ed !important;
   }
   /* function name */
   .fun {
-    color: #576ddb !important;
+    color: #e6e9ed !important;
   }
 }
+© 2020 GitHub, Inc.
