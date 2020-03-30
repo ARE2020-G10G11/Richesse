@@ -6,7 +6,7 @@ Le but du projet est de prouver qu'une famille défavorisée a beaucoup plus de 
 
 |(´・ω・｀)| ( ͡° ͜ʖ ͡°) | ಠ_ಠ | ᕕ( ᐛ )ᕗ |
 |-----|--|--|--|
-|P.Boutonnet |M.BenGhanem| A.DREAU | P.RIEUNIER|
+|P.Boutonnet |M.BenGhanem| A.Dreau | P.Reunier|
 
  
 ## Description synthétique du projet
@@ -16,8 +16,10 @@ L'environnement quotidien et culturelle d'un foyer lui permet il une améliorati
 
 **Hypothèse principale :**
 Il faut qu'il y ait plus de 50% de favorisées dans l'entourage quotidien d'un défavorisé pour qu'il évolue dans l'échelle social
+
 **Hypothèses secondaires :** 
 Les écoles privés, facteur de discrimination diminue la présence de foyer favorisés dans l'entourage des défavorisés, diminuant leur chance de passer les échelons.
+
 **Objectifs :**
 Déterminer si un foyer peut s’élèver ( financièrement ) en moins de 6 génération. 
 
