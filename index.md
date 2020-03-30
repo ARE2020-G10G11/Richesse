@@ -1,4 +1,4 @@
-**Richesse et inégalité**
+## Richesse et inégalité
 
 Le but du projet est de prouver qu'une famille défavorisée a beaucoup plus de chance d'accéder à un épanouissement social fort si elle est entourée de famille favorisée dans son environnement quotidien
 
