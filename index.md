@@ -1,5 +1,5 @@
 
-**Le but du projet est de montrer qu'une famille défavorisée a beaucoup plus de chance d'accéder à un épanouissement social élevé si elle est entourée de famille favorisée dans son environnement quotidien.
+**Le but du projet est de montrer qu'une famille défavorisée a beaucoup plus de chance d'accéder à un épanouissement social élevé si elle est entourée de famille favorisée dans son environnement quotidien.**
 
 ## Présentation de l'équipe
 
