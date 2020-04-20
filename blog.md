@@ -14,6 +14,8 @@ Cette semaine nous nous sommes stylisés sur la mise en forme du site internet d
 
 Durant les vacances nous avons eu des difficultées à communiquer entre nous. Cependant nous avons réussi à avancer sur le carnet de bord et la bibliographie afin de le rendre pour le 30 avril. Cette semaine nous commncerons le code avec un peu de retard cependant avec toutes nos recherches nous espérons avancer plus vite que ce nous avions prévu.
 
-### ...
+### Semaine 4
+
+Nous avons enfin réussi à mettre notre carte mental sur notre site internet...
 
 <a href="index.html"> Retour à la page principale </a>
