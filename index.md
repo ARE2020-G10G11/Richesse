@@ -11,10 +11,10 @@
 ## Description synthétique du projet
 
 **Problématique :** 
-L'environnement quotidien et culturelle d'un foyer lui permet il une amélioration plus que significative de sa situation socio-économique
+L'environnement quotidien et culturelle d'un foyer lui permet il une amélioration plus que significative de sa situation économique.
 
 **Hypothèse principale :**
-Il faut qu'il y ait plus de 50% de favorisées dans l'entourage quotidien d'un défavorisé pour qu'il évolue dans l'échelle social
+Il faut qu'il y ait plus de 50% de favorisées dans l'entourage quotidien d'un défavorisé pour qu'il évolue dans l'échelle social.
 
 **Hypothèses secondaires :** 
 Les écoles privés, facteur de discrimination diminue la présence de foyer favorisés dans l'entourage des défavorisés, diminuant leur chance de passer les échelons.
