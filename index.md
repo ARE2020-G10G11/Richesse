@@ -44,7 +44,7 @@ https://mathworld.wolfram.com/GiniCoefficient.html (Math World)
 
 **Carte mentale de vos mots-clés, en utilisant** <a href="https://framindmap.org/mindmaps/index.html">Framindmap </a> 
 
-Liste de l'ensemble des ressources bibliographiques utilisées pour vos travaux. **<= Indiquez le canal utilisé pour les trouver (Google Scholar, sources wikipedia, ressources en ligne SU, ...)**
-s
+Liste de l'ensemble des ressources bibliographiques utilisées pour vos travaux. **<= Indiquez le canal utilisé pour les trouver (Google Scholar, sources wikipedia, ressources en ligne SU, ...)**s
+
 ![alt text]
 https://github.com/ARE2020-G10G11/Richesse/blob/master/argent-dieu.jpg
