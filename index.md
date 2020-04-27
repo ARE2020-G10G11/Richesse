@@ -46,5 +46,4 @@ https://mathworld.wolfram.com/GiniCoefficient.html (Math World)
 
 Liste de l'ensemble des ressources bibliographiques utilisées pour vos travaux. **<= Indiquez le canal utilisé pour les trouver (Google Scholar, sources wikipedia, ressources en ligne SU, ...)**s
 
-![alt text]
-(https://github.com/ARE2020-G10G11/Richesse/blob/master/argent-dieu.jpg)
+![alt text](https://github.com/ARE2020-G10G11/Richesse/blob/master/argent-dieu.jpg)
