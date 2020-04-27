@@ -32,7 +32,13 @@ def MoyenneDistMoyenne(L) :
 	"""list[float] -> float
 	Renvoie la Moyenne des Distances à la Moyenne"""
 	M = Moyenne(L)
-	return(MoyenneDistMoyenne([abs(M-i) for i in L]))
+	return Moyenne([abs(M-i) for i in L])
+
+def EcartType(L)
+	"""list[float] -> float
+	Renvoie la Moyenne des Distances à la Moyenne"""
+	M = Moyenne(L)
+	return Moyenne([(M-i)**2 for i in L])**0.5
 
 def ListeSalaire(L) :
 	"""list[Individu] -> list[float]
@@ -43,23 +49,13 @@ def ListeSalaire(L) :
 		Ln.append(S)
 	return Ls
 
-def ListeSalaireCroissant(L) :
-	"""list[Individu] -> list[float]
-	Renvoie la liste croissante des salaires de la liste d'individu"""
-	return RangementCroissant(ListeSalaire(L))
-
 def ListeGeneration(L,n) :
 	"""list[list[Individu]]*int -> list[Individu]
 	Renvoie la liste des individu d'une Generation"""
 	return L[n]
 
-def ListeSalaireCroissantGeneration(L,n) :
-	"""list[list[Individu]]*int -> list[float]
-	Renvoie la liste croissante des salaires de la liste des individus d'une generation]"""
-	return ListeSalaireCroissant(ListeGeneration(L,n))
-
-def ArbreGenealogique(Ind,n,L) :
-	"""Individu*int*list[list[Individu]] -> list[Individu]
+def ArbreGenealogiqueNGenerations(L,Ind,n) :
+	"""list[list[Individu]]*Individu*int -> list[Individu]
 	Renvoie la liste d'individu de l'arbre généalogique de Ind jusqu'à n générations en arrière"""
 	Id,P,G,S = Ind
 	P1,P2 = P
@@ -74,9 +70,52 @@ def ArbreGenealogique(Ind,n,L) :
 				
 	return LP + ArbreGenealogique(LP[0],n-1,L) + ArbreGenealogique(LP[1],n,L)
 
-	
+def ListeArbreGenealogiqueNGenerationièmeGeneration(L,n,i) :
+	"""list[list[Individu]]*Individu*int -> list[list[Individu]]
+	Renvoie la liste de liste d'individu de l'arbre généalogique des individus de la génération i jusqu'à n générations en arrière"""
+	return [ArbreGenealogiqueNGenerations(L,Ind,n) for Ind in L[i]]
 
-def coeffgini(L) :
+def SommeCummulé(L) :
+	"""list[float] -> list[float]
+	Renvoie la liste en cummulé de la liste L"""
+	LC = []
+	S = 0
+	for i in L :
+		S += i
+		LC.append(S)
+	return LC
+		
+def CoeffGini(L) :
+	"""list[float] -> float
+	Renvoie le coefficient de gini de la liste"""
+	N = len(L)
+	T = L[len(L)-1]
+	S = 0
+	B = L[0]/2
+	for i in range(len(L)-1) :
+		B += (L[i]+L[i+1])/2	
+	return 1 - 2*B/T*N
+
+
+def CoeffGiniSalaireListeIndividu(L) :
+	"""list[Individu] -> float
+	Renvoie le coefficient de gini des salaires de la liste d'Individu"""
+	return CoeffGini(SommeCummulé(RangementCroissant(ListeSalaire(L))))
+
+def EcartTypeSalaireListeIndividu(L) :
+	"""list[Individu] -> float
+	Renvoie l'écart type des salaires de la liste d'Individu"""
+	return 
+
+def EcartTypeEtGiniParGeneration(L) :
+	"""list[list[Individu]] -> list[tuple[float,float]]"""
+	return [(EcartTypeSalaireListeIndividu(Lg),CoeffGiniSalaireListeIndividu(Lg)) for Lg in L]
+
+
+	
+		
+	
+	
 
 	
 
