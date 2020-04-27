@@ -48,4 +48,4 @@ Liste de l'ensemble des ressources bibliographiques utilisées pour vos travaux.
 s
 ![alt text]
 (https://aip.scitation.org/na101/home/literatum/publisher/aip/journals/content/adv/2019/adv.2019.9.issue-1/1.5078674/20190115/images/medium/1.5078674.figures.online.f4.jpg)
-
+![alt text]https://www.oxfamfrance.org/inegalites-et-justice-fiscale/revenus-patrimoine-richesses-pauvrete-quelques-reperes-pour-mieux-comprendre-les-inegalites/
