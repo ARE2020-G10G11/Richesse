@@ -16,7 +16,7 @@ Durant les vacances nous avons eu des difficultées à communiquer entre nous. C
 
 ### Semaine 4
 
-Nous avons enfin réussi à mettre notre carte mental sur notre site internet.De plus nous avons enfin commencé le code.
+Nous avons enfin réussi à mettre notre carte mental sur notre site internet.De plus nous avons enfin commencé le code en définissant note population. On identifie les Individus selon ces critères : Identifiant, 2 Parents, Génération, Salaire.
 
 ### Semaine 5
 
