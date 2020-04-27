@@ -16,6 +16,10 @@ Durant les vacances nous avons eu des difficultées à communiquer entre nous. C
 
 ### Semaine 4
 
-Nous avons enfin réussi à mettre notre carte mental sur notre site internet...
+Nous avons enfin réussi à mettre notre carte mental sur notre site internet.De plus nous avons enfin commencé le code.
+
+### Semaine 5
+
+Nous continuons à avancer sur le code cette semaine nous avons commencé à réfléchir à la possibilité de rajouter un paramètre spatial à la suite de la lecture d'un article qui mettait en lien la situation géographique d'une population et sa situation socio/économique.
 
 <a href="index.html"> Retour à la page principale </a>
