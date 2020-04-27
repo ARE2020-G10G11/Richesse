@@ -23,6 +23,8 @@ Les écoles privés, facteur de discrimination diminue la présence de foyer fav
 Déterminer si un foyer peut s’élèver ( financièrement ) en moins de 6 génération. 
 
 
+
+
 **Critère(s) d'évaluation :**
 Evaluer le nombre de génération que prend un foyer à effectuer une ascension sociale en fonction de la proportion de voisin favorisés.
 
@@ -44,3 +46,6 @@ https://mathworld.wolfram.com/GiniCoefficient.html (Math World)
 
 Liste de l'ensemble des ressources bibliographiques utilisées pour vos travaux. **<= Indiquez le canal utilisé pour les trouver (Google Scholar, sources wikipedia, ressources en ligne SU, ...)**
 s
+![alt text]
+(https://aip.scitation.org/na101/home/literatum/publisher/aip/journals/content/adv/2019/adv.2019.9.issue-1/1.5078674/20190115/images/medium/1.5078674.figures.online.f4.jpg)
+
