@@ -36,45 +36,27 @@ Evaluer le nombre de génération que prend un foyer à effectuer une ascension 
 ...
 
 
-## Article 1 :
 
-![alt text](https://www.insee.fr/fr/statistiques/2529731#documentation)
 
-## Article 2 :
+1.[Gravir l'échelle sociale est plus aisé en Île-De-France qu'en province](https://www.insee.fr/fr/statistiques/2529731#documentation)
 
-![alt text](https://www.strategie.gouv.fr/publications/geographie-de-lascension-sociale)
+2.[La géographie de l'ascension sociale](https://www.strategie.gouv.fr/publications/geographie-de-lascension-sociale)
 
-## Article 3 :
+3.(https://blogs.mediapart.fr/edition/le-travail-en-question/article/260918/la-repartition-des-richesses-et-des-inegalites-pour-les-nuls-comme-moi)
 
-![alt text](https://blogs.mediapart.fr/edition/le-travail-en-question/article/260918/la-repartition-des-richesses-et-des-inegalites-pour-les-nuls-comme-moi)
-
-## Article 4 :
-
-![alt text](https://www.insee.fr/fr/statistiques/4253029?sommaire=4253159)
+4.(https://www.insee.fr/fr/statistiques/4253029?sommaire=4253159)
  
- ## Article 5 :
+5.(https://www.oxfamfrance.org/rapports/celles-qui-comptent/)
  
- ![alt text](https://www.oxfamfrance.org/rapports/celles-qui-comptent/)
+6.(https://www.lemonde.fr/les-decodeurs/article/2018/01/23/comprendre-l-etude-d-oxfam-sur-les-inegalites-de- richesse_5245843_4355770.html)
  
- ## Article 6 :
+7.(https://www.cairn.info/revue-le-francais-aujourd-hui-2013-4-page-9.htm)
  
- ![alt text](https://www.lemonde.fr/les-decodeurs/article/2018/01/23/comprendre-l-etude-d-oxfam-sur-les-inegalites-de-richesse_5245843_4355770.html)
+8.(https://www.persee.fr/doc/ecoru_0013-0559_1995_num_225_1_4702)
  
- ## Article 7 :
+9.(https://www.jstor.org/stable/20079155?seq=1)
  
- ![alt text](https://www.cairn.info/revue-le-francais-aujourd-hui-2013-4-page-9.htm)
- 
- ## Article 8 :
- 
- ![alt text](https://www.persee.fr/doc/ecoru_0013-0559_1995_num_225_1_4702)
- 
- ## Article 9 :
- 
- ![alt text](https://www.jstor.org/stable/20079155?seq=1)
- 
- ## Artcile 10 :
- 
- ![alt text](https://www.jstor.org/stable/40895014?seq=1)
+10.(https://www.jstor.org/stable/40895014?seq=1)
 
 
  
