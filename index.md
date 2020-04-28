@@ -55,7 +55,9 @@ Evaluer le nombre de génération que prend un foyer à effectuer une ascension 
  
 **10.** [La répartition des richesses comprise comme simple introduction à l'économiensociale](https://www.jstor.org/stable/40895014?seq=1)
 
+## Article 1:
 
+![alt text](https://github.com/ARE2020-G10G11/Richesse/blob/master/Article1%20fig%201.png)
  
 
 
