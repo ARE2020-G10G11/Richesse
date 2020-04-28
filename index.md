@@ -1,8 +1,15 @@
 # Répartition des richesses
 
+## Présentation de l'équipe
+
+**|(´・ω・｀)| ( ͡° ͜ʖ ͡°) | ಠ_ಠ | ᕕ( ᐛ )ᕗ |
+**|-----|--|--|--|
+**|P.Boutonnet |M.BenGhanem| A.Dreau | P.Reunier|
+
+
 ## Problématique :
 
-L'environnement quotidien et culturelle d'un foyer lui permet il une amélioration significative de sa situation économique.
+**L'environnement quotidien et culturelle d'un foyer lui permet il une amélioration significative de sa situation économique.
 
 # hypothèses :
 
@@ -12,7 +19,7 @@ L'environnement quotidien et culturelle d'un foyer lui permet il une améliorati
 
 # Objectif :
 
-Déterminer si un foyer peut s’élèver ( financièrement ) en moins de 6 génération.
+Déterminer si un foyer peut s’élèver ( financièrement ) en moins de 6 génération. De plus nous espérons montrer qu'une famille défavorisée a beaucoup plus de chance d'accéder à un épanouissement économique élevé si elle est entourée de famille favorisée dans son environnement quotidien
 
 # Critères d'évaluations :
 
