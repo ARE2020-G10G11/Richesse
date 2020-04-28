@@ -9,7 +9,7 @@
 
 ## Problématique :
 
-**L'environnement quotidien et culturelle d'un foyer lui permet il une amélioration significative de sa situation économique.
+**L'environnement quotidien et culturelle d'un foyer lui permet il une amélioration significative de sa situation économique.**
 
 # hypothèses :
 
