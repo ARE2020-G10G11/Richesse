@@ -48,7 +48,7 @@ Evaluer le nombre de génération que prend un foyer à effectuer une ascension 
  
 5.[Quand l’ultra-richesse prospère au détriment des plus pauvres et des femmes](https://www.oxfamfrance.org/rapports/celles-qui-comptent/)
  
-6.[Comprendre l'étude d'oxfam sur les inégalités de richesse](https://www.lemonde.fr/les-decodeurs/article/2018/01/23/comprendre-l-etude-d-oxfam-sur-les-inegalites-de- richesse_5245843_4355770.html)
+6.[Comprendre l'étude d'oxfam sur les inégalités de richesse](https://www.lemonde.fr/les-decodeurs/article/2018/01/23/comprendre-l-etude-d-oxfam-sur-les-inegalites-de-richesse_5245843_4355770.html)
  
 7.[Des inégalités scolaires, des moyens de les mesurer et d'en étudier les processus de production](https://www.cairn.info/revue-le-francais-aujourd-hui-2013-4-page-9.htm)
  
