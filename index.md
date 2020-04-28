@@ -31,12 +31,12 @@ Evaluer le nombre de génération que prend un foyer à effectuer une ascension 
 ## Blog : <a href="blog.html"> C'est ici ! </a>
 
 
-## Références Bibliographiques
+## Références Bibliographiques :
 
 ...
 
 
-## Article 1
+## Article 1 :
 
 ...
 ***************
