@@ -1,5 +1,3 @@
-# Répartition des richesses
-
 ## Présentation de l'équipe
 
 |(´・ω・｀)| ( ͡° ͜ʖ ͡°) | ಠ_ಠ | ᕕ( ᐛ )ᕗ |
