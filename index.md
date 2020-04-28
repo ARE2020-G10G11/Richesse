@@ -57,9 +57,16 @@ Evaluer le nombre de génération que prend un foyer à effectuer une ascension 
 
 ## Article 1:
 
+Titre : Gravir l'échelle sociale est plus aisé en Île-De-France qu'en province
+Auteur : C.Dherbécourt
+Type : Article
+
 ![alt text](https://github.com/ARE2020-G10G11/Richesse/blob/master/Article1%20fig%201.png)
- 
 
+![alt text](https://github.com/ARE2020-G10G11/Richesse/blob/master/Article1%20fig%202.png)
 
+![alt text](https://github.com/ARE2020-G10G11/Richesse/blob/master/Article1%20fig%203.png)
+
+![alt text](https://github.com/ARE2020-G10G11/Richesse/blob/master/Article1%20fig%204.png)
 
 
