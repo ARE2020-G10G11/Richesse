@@ -42,21 +42,21 @@ Evaluer le nombre de génération que prend un foyer à effectuer une ascension 
 
 2.[La géographie de l'ascension sociale](https://www.strategie.gouv.fr/publications/geographie-de-lascension-sociale)
 
-3.(https://blogs.mediapart.fr/edition/le-travail-en-question/article/260918/la-repartition-des-richesses-et-des-inegalites-pour-les-nuls-comme-moi)
+3.[La répartition des richesses et des inégalités](https://blogs.mediapart.fr/edition/le-travail-en-question/article/260918/la-repartition-des-richesses-et-des-inegalites-pour-les-nuls-comme-moi)
 
-4.(https://www.insee.fr/fr/statistiques/4253029?sommaire=4253159)
+4.[Inégalités de revenu et de richesse en France : évolutions et liens sur longue période](https://www.insee.fr/fr/statistiques/4253029?sommaire=4253159)
  
-5.(https://www.oxfamfrance.org/rapports/celles-qui-comptent/)
+5.[Quand l’ultra-richesse prospère au détriment des plus pauvres et des femmes](https://www.oxfamfrance.org/rapports/celles-qui-comptent/)
  
-6.(https://www.lemonde.fr/les-decodeurs/article/2018/01/23/comprendre-l-etude-d-oxfam-sur-les-inegalites-de- richesse_5245843_4355770.html)
+6.[Comprendre l'étude d'oxfam sur les inégalités de richesse](https://www.lemonde.fr/les-decodeurs/article/2018/01/23/comprendre-l-etude-d-oxfam-sur-les-inegalites-de- richesse_5245843_4355770.html)
  
-7.(https://www.cairn.info/revue-le-francais-aujourd-hui-2013-4-page-9.htm)
+7.[Des inégalités scolaires, des moyens de les mesurer et d'en étudier les processus de production](https://www.cairn.info/revue-le-francais-aujourd-hui-2013-4-page-9.htm)
  
-8.(https://www.persee.fr/doc/ecoru_0013-0559_1995_num_225_1_4702)
+8.[La répartition des hommes, des activités et des richesses sur le territoire national](https://www.persee.fr/doc/ecoru_0013-0559_1995_num_225_1_4702)
  
-9.(https://www.jstor.org/stable/20079155?seq=1)
+9.[Modéliser la distribution des richesses en France](https://www.jstor.org/stable/20079155?seq=1)
  
-10.(https://www.jstor.org/stable/40895014?seq=1)
+10.[La répartition des richesses comprise comme simple introduction à l'économiensociale](https://www.jstor.org/stable/40895014?seq=1)
 
 
  
