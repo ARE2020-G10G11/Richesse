@@ -107,9 +107,6 @@ def EcartTypeSalaireListeIndividu(L) :
 	Renvoie l'écart type des salaires de la liste d'Individu"""
 	return 
 
-def EcartTypeEtGiniParGeneration(L) :
-	"""list[list[Individu]] -> list[tuple[float,float]]"""
-	return [(EcartTypeSalaireListeIndividu(Lg),CoeffGiniSalaireListeIndividu(Lg)) for Lg in L]
 
 
 	
