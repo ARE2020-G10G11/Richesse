@@ -20,6 +20,10 @@ Nous avons enfin réussi à mettre notre carte mental sur notre site internet.De
 
 ### Semaine 5
 
-Nous continuons à avancer sur le code cette semaine nous avons commencé à réfléchir à la possibilité de rajouter un paramètre spatial à la suite de la lecture d'un article qui mettait en lien la situation géographique d'une population et sa situation socio/économique.
+Nous poursuivons le développement du code et codons le maximum de paramètre dans l'optique d'avoir une représentation la plus proche possible de la réalité. La difficulté réside surtout dans le faite de modéliser au mieux des paramètres physiques avec du code.
+
+### Semaine 6
+
+Nous continuons à avancer sur le code cette semaine nous avons commencé à réfléchir à la possibilité de rajouter un paramètre spatial à la suite de la lecture d'un article qui mettait en lien la situation géographique d'une population et sa situation socio/économique. Cela risque de rajouter de la complexité à notre code ( à voir comment nous intègrerons cette partie du code et comment nous la paramètrerons, rien n'a été encore décidé et nous n'avons pas encore fixé les paramètres ) cependant cela le rendra plus réaliste.
 
 <a href="index.html"> Retour à la page principale </a>
