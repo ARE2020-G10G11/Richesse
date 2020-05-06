@@ -55,13 +55,6 @@ Evaluer le nombre de génération que prend un foyer à effectuer une ascension 
  
 **10.** [La répartition des richesses comprise comme simple introduction à l'économiensociale](https://www.jstor.org/stable/40895014?seq=1)
 
-
-## Article 1
-
-- **Titre**: Gravir l'échelle sociale
-- **Auteur**:C.Dherbécourt
-- **Type**: Article
-
 ## Article 2:
 
 - **Titre**: Gravir l'échelle sociale est plus aisé en Île-De-France qu'en province
@@ -75,6 +68,7 @@ Evaluer le nombre de génération que prend un foyer à effectuer une ascension 
 ![alt text](https://raw.githubusercontent.com/ARE2020-G10G11/Richesse/master/articleuntrois.png)
 
 ![alt text](https://raw.githubusercontent.com/ARE2020-G10G11/Richesse/master/articleunquatre.png)
+
 
 
 
