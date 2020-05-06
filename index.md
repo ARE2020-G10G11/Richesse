@@ -28,7 +28,7 @@ Evaluer le nombre de génération que prend un foyer à effectuer une ascension 
 
 ## Mindmap :
 
-![alt text](https://github.com/ARE2020-G10G11/Richesse/blob/master/mindmap.png)
+![alt text](https://raw.githubusercontent.com/ARE2020-G10G11/Richesse/master/mindmap.png)
 
 ## Blog : <a href="blog.html"> C'est ici ! </a>
 
