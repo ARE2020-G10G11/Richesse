@@ -62,5 +62,5 @@ Evaluer le nombre de génération que prend un foyer à effectuer une ascension 
 - **Type**: Article
 
 ![alt text](https://raw.githubusercontent.com/ARE2020-G10G11/Richesse/master/articleun.png)
-![alt text](https://www.forbes.fr/wp-content/uploads/2019/10/adobestock_188260148-740x370.jpeg)
+![alt text](https://www.strategie.gouv.fr/sites/strategie.gouv.fr/files/thumbnails/image/infog_ascenseur1.png)
 
