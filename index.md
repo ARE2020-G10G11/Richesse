@@ -61,7 +61,7 @@ Evaluer le nombre de génération que prend un foyer à effectuer une ascension 
 - **Auteur**: T.Poncelet, L.Trigano et M.Sagot
 - **Type**: Article
 
- ## Résumé de l'article: <a href="Résumé.html"> C'est ici ! </a>
+ ## Résumé de l'article: <a href="resume.html"> C'est ici ! </a>
 
 ![alt text](https://raw.githubusercontent.com/ARE2020-G10G11/Richesse/master/articleun.png)
 
