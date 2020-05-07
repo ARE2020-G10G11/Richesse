@@ -68,11 +68,11 @@ def ArbreGenealogiqueNGenerations(L,Ind,n) :
 			if IdP == P1 or IdP == P2 :
 				LP.append(IndP)
 				
-	return LP + ArbreGenealogique(LP[0],n-1,L) + ArbreGenealogique(LP[1],n,L)
+	return LP + ArbreGenealogiqueNGenerations(LP[0],n-1,L) + ArbreGenealogiqueNGenerations(LP[1],n,L)
 
 def ListeArbreGenealogiqueNGenerationièmeGeneration(L,n,i) :
 	"""list[list[Individu]]*Individu*int -> list[list[Individu]]
-	Renvoie la liste de liste d'individu de l'arbre généalogique des individus de la génération i jusqu'à n générations en arrière"""
+	Renvoie la liste des l'arbre généalogique des individus de la génération i jusqu'à n générations en arrière"""
 	return [ArbreGenealogiqueNGenerations(L,Ind,n) for Ind in L[i]]
 
 def SommeCummulé(L) :
@@ -88,29 +88,47 @@ def SommeCummulé(L) :
 def CoeffGini(L) :
 	"""list[float] -> float
 	Renvoie le coefficient de gini de la liste"""
-	N = len(L)
-	T = L[len(L)-1]
+	L2 = SommeCummulé(RangementCroissant(L))
+	N = len(L2)
+	T = L2[len(L2)-1]
 	S = 0
-	B = L[0]/2
-	for i in range(len(L)-1) :
-		B += (L[i]+L[i+1])/2	
+	B = L2[0]/2
+	for i in range(len(L1)-1) :
+		B += (L2[i]+L2[i+1])/2	
 	return 1 - 2*B/T*N
 
 
 def CoeffGiniSalaireListeIndividu(L) :
 	"""list[Individu] -> float
 	Renvoie le coefficient de gini des salaires de la liste d'Individu"""
-	return CoeffGini(SommeCummulé(RangementCroissant(ListeSalaire(L))))
+	return CoeffGini((ListeSalaire(L))
 
 def EcartTypeSalaireListeIndividu(L) :
 	"""list[Individu] -> float
 	Renvoie l'écart type des salaires de la liste d'Individu"""
-	return 
+	return EcartType(ListeSalaire(L))
 
 
 def EcartTypeEtGiniParGeneration(L) :
-	"""list[list[Individu]] -> list[tuple[float,float]]"""
+	"""list[list[Individu]] -> list[tuple[float,float]]
+	Renvoie l'écart Type et le coefficient de gini de chacune des generations"""
 	return [(EcartTypeSalaireListeIndividu(Lg),CoeffGiniSalaireListeIndividu(Lg)) for Lg in L]
+
+def PopulationSalaireParGeneration(L) :
+	"""list[list[Individu]] -> list[list[float]]
+	Renvoie la liste de la Population selon le salaire de chacune des generations"""
+	return [RangementCroissant(ListeSalaire(Lg)) for Lg in L]
+
+			 
+def ListCouple(L) :
+	"""list[Individu]] -> list[list[Individu]]
+	Renvoie la Liste des couples formées 
+	L3 = L[
+
+def Heredite(L) :
+	"""list[Individu] -> list[Individu]
+	Renvoie la liste de la génération suivante à partir de la génération donnée"""
+	
 	
 		
 	
