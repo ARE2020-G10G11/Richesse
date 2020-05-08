@@ -122,12 +122,41 @@ def PopulationSalaireParGeneration(L) :
 			 
 def ListCouple(L) :
 	"""list[Individu]] -> list[list[Individu]]
-	Renvoie la Liste des couples formées 
-	L3 = L[]
+	Renvoie la Liste des couples formées à partir de L"""
+	L3 = L[::]
+	L4 = []
+	while len(L3) > 1 :
+		for i in range(1,len(L3)) :
+			if > Probabilité(L3[0],L3[i]) :
+				L4.append([L3[0],L3[i]])
+				L3 = L3[2:i] + L3[i+1:]
+	return L4
+		
+def NbEnfant(L) :
+	"""list[list[Individu]] -> int
+	Renvoie le aléatoirement le nombre d'enfant qu'auront les 2 individus de L""" 
+	
 
 def Heredite(L) :
 	"""list[Individu] -> list[Individu]
 	Renvoie la liste de la génération suivante à partir de la génération donnée"""
+	LNouvelleGeneration = []
+	_,_,G,_ = L[0]
+	for C in ListCouple(L) :
+		NbE = NbEnfant(C)
+		Id1,_,_,_ = C[0]
+		Id2,_,_,_ = C[1]
+		for i in range(NbE) :
+			 LNouvelleGeneration.append(([len(LNouvelleGeneration),(Id1,Id2),SalaireEnfant(C,NbE)))
+			 
+			 
+def Simulation(G0,G) :
+	"""list[Individu]*int -> list[list[Individu]]
+	ListFinal = [G0]
+	for i in range(G) :
+	ListFinal.append(Heredite(ListFinal[len(ListFinal)-1])
+	return ListFinal
+
 	
 	
 		
