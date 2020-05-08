@@ -123,7 +123,7 @@ def PopulationSalaireParGeneration(L) :
 def ListCouple(L) :
 	"""list[Individu]] -> list[list[Individu]]
 	Renvoie la Liste des couples formées 
-	L3 = L[
+	L3 = L[]
 
 def Heredite(L) :
 	"""list[Individu] -> list[Individu]
