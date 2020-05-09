@@ -155,7 +155,7 @@ def Simulation(G0,G) :
 	ListFinal = [G0]
 	for i in range(G) :
 	ListFinal.append(Heredite(ListFinal[len(ListFinal)-1])
-	return ListFina
+	return ListFinal
 
 	
 	
