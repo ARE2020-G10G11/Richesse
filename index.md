@@ -61,10 +61,8 @@ Evaluer le nombre de génération que prend un foyer à effectuer une ascension 
 **10.** [La répartition des richesses comprise comme simple introduction à l'économiensociale](https://www.jstor.org/stable/40895014?seq=1)
 
 
-<a href="bibliographie.html"> -Bibliographie au format IEEE </a>
 
-
-## Article 2:
+## Article 1:
 
 - **Titre**: Gravir l'échelle sociale est plus aisé en Île-De-France qu'en province
 - **Auteur**: T.Poncelet, L.Trigano et M.Sagot
