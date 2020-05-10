@@ -58,7 +58,7 @@ Evaluer le nombre de génération que prend un foyer à effectuer une ascension 
  
 **9.** [Modéliser la distribution des richesses en France](https://www.jstor.org/stable/20079155?seq=1)
  
-**10.** [La répartition des richesses comprise comme simple introduction à l'économiensociale](https://www.jstor.org/stable/40895014?seq=1)
+**10.** [La répartition des richesses](https://www.jstor.org/stable/40895014?seq=1)
 
 
 
