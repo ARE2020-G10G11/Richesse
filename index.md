@@ -83,6 +83,18 @@ Pour ceux qui avaient déjà quitté le système scolaire en 1999, le dérouleme
 
 ![alt text](https://raw.githubusercontent.com/ARE2020-G10G11/Richesse/master/articleundeux.png)
 
+
+L’« ascenseur social » fonctionne mieux en Ile-de-France qu’en province
+
+Les jeunes de la génération nés en province dans les années 80 et y ayant passé une partie de leur adolescence sont moins nombreuses à poursuivre des études longues, à l’exception des enfants de cadres. C’est le cas de 34 % des enfants de cadres , 17 % des enfants dont le père exerce une profession intermédiaire , 11 % des enfants d’employés et 5 % des enfants d’ouvriers . Il est aussi plus difficile aux enfants d’employés et d’ouvriers d’accéder à une profession intermédiaire . Les chances de connaître l’ascension sociale sont donc plus faibles pour les générations de province . 
+
+Hormis le niveau des diplômes obtenu, la structure des emplois contribue à expliquer les écarts entre l’Ile-de-France et la province. Les postes de cadres sont deux fois moins fréquents en province qu’en Ile-de-France . Pour une partie des jeunes de province, l’accès à un poste de cadre nécessite de s’installer en Ile-de-France. En effet, un quart des jeunes cadres de province résident dans la région capitale entre 23 et 32 ans et seulement 4 % quand ils exercent un autre type d’emploi. 
+
+Comme pour les jeunes Franciliens, la structure familiale influe sur le devenir des jeunes élevés en province. En province, l’ascension sociale au cours de la vie active de la génération née au tournant des années 70 est nettement plus dépendante de l’origine sociale que pour la génération francilienne . Pour un enfant d’ouvrier, la part des cadres s’accroît de seulement 4,6 points entre 23-32 ans et 36-45 ans, deux fois moins qu’en Ile-de-France, quand elle augmente de plus de 9 points pour les enfants dont le père est cadre ou exerce une profession intermédiaire. L’accès aux postes de cadre au fil de la carrière est d’autant plus difficile qu’une partie des cadres « franciliens » partent s’installer en province et qu’une partie des cadres « de province » y retournent. 
+
+A contrario, la promotion sociale pour les enfants de père employé, mais surtout ouvrier, passe plus souvent qu’en Ile-de-France par l’obtention d’un emploi de profession intermédiaire. Au fil des générations, l’origine sociale continue de déterminer la position sociale, et davantage encore en province. Ainsi, pour la génération de province des années 80, l’accès aux postes de cadres reste marginal pour les enfants d’ouvriers. Au final, si l’augmentation des postes de cadres bénéficie à tous, aucun rattrapage ne s’observe pour les enfants d’ouvriers et d’employés, par rapport aux enfants de cadres. 
+
+
 ![alt text](https://raw.githubusercontent.com/ARE2020-G10G11/Richesse/master/articleuntrois.png)
 
 ![alt text](https://raw.githubusercontent.com/ARE2020-G10G11/Richesse/master/articleunquatre.png)
