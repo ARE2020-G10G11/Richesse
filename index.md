@@ -81,7 +81,7 @@ La promotion sociale s’effectue aussi au cours d’une carrière
 Pour ceux qui avaient déjà quitté le système scolaire en 1999, le déroulement de carrière se fait sous le signe de la promotion professionnelle, notamment en raison de l’évolution de la structure des emplois. Entre 1999 et 2012, au sein de cette génération, la part des cadres s’est accrue en moyenne de 8,6 points. Si cette progression s’observe quelle que soit l’origine sociale de ces jeunes, les disparités observées en début de carrière se sont maintenues. Entre 36 et 45 ans, les enfants d’ouvriers sont presque aussi souvent cadres qu’ouvriers .
 
 
-![alt text](https://raw.githubusercontent.com/ARE2020-G10G11/Richesse/master/articleundeux.png)
+![alt text](https://raw.githubusercontent.com/ARE2020-G10G11/Richesse/master/articleunquatre.png)
 
 
 L’« ascenseur social » fonctionne mieux en Ile-de-France qu’en province
@@ -97,7 +97,7 @@ A contrario, la promotion sociale pour les enfants de père employé, mais surto
 
 ![alt text](https://raw.githubusercontent.com/ARE2020-G10G11/Richesse/master/articleuntrois.png)
 
-![alt text](https://raw.githubusercontent.com/ARE2020-G10G11/Richesse/master/articleunquatre.png)
+![alt text](https://raw.githubusercontent.com/ARE2020-G10G11/Richesse/master/articleundeux.png)
 
 
 
