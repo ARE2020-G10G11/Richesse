@@ -35,9 +35,10 @@ Evaluer le nombre de génération que prend un foyer à effectuer une ascension 
 
 ## Références Bibliographiques :
 
-**1.** [Gravir l'échelle sociale est plus aisé en Île-De-France qu'en province](https://www.insee.fr/fr/statistiques/2529731#documentation)
+**1.** [La géographie de l'ascension sociale](https://www.strategie.gouv.fr/publications/geographie-de-lascension-sociale)
+[Gravir l'échelle sociale est plus aisé en Île-De-France qu'en province](https://www.insee.fr/fr/statistiques/2529731#documentation)
 
-**2.** [La géographie de l'ascension sociale](https://www.strategie.gouv.fr/publications/geographie-de-lascension-sociale)
+**2.** [Gravir l'échelle sociale est plus aisé en Île-De-France qu'en province](https://www.insee.fr/fr/statistiques/2529731#documentation)
 
 **3.** [La répartition des richesses et des inégalités](https://blogs.mediapart.fr/edition/le-travail-en-question/article/260918/la-repartition-des-richesses-et-des-inegalites-pour-les-nuls-comme-moi)
 
