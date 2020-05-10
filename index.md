@@ -65,6 +65,13 @@ Evaluer le nombre de génération que prend un foyer à effectuer une ascension 
 
  ## Résumé de l'article : <a href="resume.html"> C'est ici ! </a>
 
+L’accès au statut de cadre reste fortement déterminé par l’origine sociale
+
+Entre 23 et 32 ans, seulement 13 % d’entre eux sont ouvriers alors que 36 % des pères étaient ouvriers à la naissance de leur enfant. C’est le cas pour un quart des enfants de professions intermédiaires mais seulement pour 15 % des enfants d’employés et d’ouvriers. Parmi ceux qui ont terminé leurs études, 45 % des enfants de cadres sont eux-mêmes cadres entre 23 et 32 ans, contre seulement un quart des enfants dont le père exerce une profession intermédiaire. Cette proportion tombe aux alentours de un pour dix pour les enfants d’employés et d’ouvriers . 
+
+C’est une position charnière de promotion sociale pour les enfants d’employés et d’ouvriers. À l’inverse, seulement 17 % des enfants de cadres démarrent leur carrière professionnelle comme employé ou ouvrier. L’essentiel des trajectoires intergénérationnelles est de faible amplitude, les enfants ayant pour la plupart une catégorie socioprofessionnelle identique ou proche de celle de leur père. La reproduction sociale est donc très marquée chez les cadres franciliens et beaucoup moins chez les ouvriers dont les effectifs déclinent depuis trois décennies. 
+
+Avec la tertiarisation de l’économie, l’évolution de la structure des emplois favorise la promotion sociale des enfants d’ouvriers. En effet, seulement 22 % des enfants d’ouvriers sont eux-mêmes ouvriers même s’ils sont cinq fois plus souvent ouvriers que les enfants de cadres. Et à l’inverse, les enfants de cadres qui ont terminé leurs études sont cinq fois plus souvent cadres que les enfants d’ouvriers en début de carrière.
 
 ![alt text](https://raw.githubusercontent.com/ARE2020-G10G11/Richesse/master/articleun.png)
 
