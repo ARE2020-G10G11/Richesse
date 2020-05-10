@@ -33,7 +33,7 @@ Evaluer le nombre de génération que prend un foyer à effectuer une ascension 
 ## Blog : <a href="blog.html"> C'est ici ! </a>
 
 
-## Références Bibliographiques :
+## Lien vers les sites de notre bibliographie  :
 
 **1.** [La géographie de l'ascension sociale](https://www.strategie.gouv.fr/publications/geographie-de-lascension-sociale)
 [Gravir l'échelle sociale est plus aisé en Île-De-France qu'en province](https://www.insee.fr/fr/statistiques/2529731#documentation)
@@ -55,6 +55,8 @@ Evaluer le nombre de génération que prend un foyer à effectuer une ascension 
 **9.** [Modéliser la distribution des richesses en France](https://www.jstor.org/stable/20079155?seq=1)
  
 **10.** [La répartition des richesses comprise comme simple introduction à l'économiensociale](https://www.jstor.org/stable/40895014?seq=1)
+
+<a href="bibliographie.html"> Bibliographie au format ... ! </a>
 
 ## Article 2:
 
@@ -100,5 +102,5 @@ A contrario, la promotion sociale pour les enfants de père employé, mais surto
 ![alt text](https://raw.githubusercontent.com/ARE2020-G10G11/Richesse/master/articleundeux.png)
 
 
-<a href="resume.html"> C'est ici ! </a>
+<a href="bibliographie.html"> Bibliographie au format ... ! </a>
 
