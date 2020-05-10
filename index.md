@@ -55,13 +55,14 @@ Evaluer le nombre de génération que prend un foyer à effectuer une ascension 
 **9.** [Modéliser la distribution des richesses en France](https://www.jstor.org/stable/20079155?seq=1)
  
 **10.** [La répartition des richesses comprise comme simple introduction à l'économiensociale](https://www.jstor.org/stable/40895014?seq=1)
-
-## Article 2:
+<a href="resume.html"> C'est ici ! </a>
+# Article 2:
 
 - **Titre**: Gravir l'échelle sociale est plus aisé en Île-De-France qu'en province
 - **Auteur**: T.Poncelet, L.Trigano et M.Sagot
 - **Type**: Article
 
+## Sunthèse :
 
  <a href="resume.html"> C'est ici ! </a>
 
