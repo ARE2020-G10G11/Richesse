@@ -26,11 +26,14 @@ Déterminer si un foyer peut s’élèver ( financièrement ) en moins de 6 gén
 
 Evaluer le nombre de génération que prend un foyer à effectuer une ascension sociale en fonction de la proportion de voisin favorisés.
 
+
+## Blog : <a href="blog.html"> C'est ici ! </a>
+
+
 ## Mindmap :
 
 ![alt text](https://raw.githubusercontent.com/ARE2020-G10G11/Richesse/master/mindmap.png)
 
-## Blog : <a href="blog.html"> C'est ici ! </a>
 
 
 ## Bibliographie
