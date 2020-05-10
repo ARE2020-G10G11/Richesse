@@ -62,9 +62,8 @@ Evaluer le nombre de génération que prend un foyer à effectuer une ascension 
 - **Auteur**: T.Poncelet, L.Trigano et M.Sagot
 - **Type**: Article
 
-**Synthèse :**
 
- <a href="resume.html"> C'est ici ! </a>
+**Synthèse :**
 
 L’accès au statut de cadre reste fortement déterminé par l’origine sociale
 
@@ -101,5 +100,5 @@ A contrario, la promotion sociale pour les enfants de père employé, mais surto
 ![alt text](https://raw.githubusercontent.com/ARE2020-G10G11/Richesse/master/articleundeux.png)
 
 
-
+<a href="resume.html"> C'est ici ! </a>
 
