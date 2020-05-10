@@ -63,7 +63,7 @@ Evaluer le nombre de génération que prend un foyer à effectuer une ascension 
 - **Type**: Article
 
 
- ## Blog : <a href="blog.html"> C'est ici ! </a>
+ <a href="resume.html"> C'est ici ! </a>
 
 L’accès au statut de cadre reste fortement déterminé par l’origine sociale
 
