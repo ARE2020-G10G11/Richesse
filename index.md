@@ -30,7 +30,7 @@ Evaluer le nombre de génération que prend un foyer à effectuer une ascension 
 
 ## Blog :
 
-Le blog  qui répertorie notre travail au fil des semaines <a href="blog.html"> est ici ! </a>
+Le blog  qui répertorie notre travail au fil des semaines est <a href="blog.html"> ici  </a>!
 
 
 
