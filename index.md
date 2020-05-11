@@ -38,6 +38,7 @@ Evaluer le nombre de génération que prend un foyer à effectuer une ascension 
 
 ## Bibliographie
 
+<a href="carnetdebord.html"> - Carnet de bord (recherche bibliographique) </a>
 <a href="bibliographie.html"> - Bibliographie (format IEEE) </a>
 
 **Lien vers les sites de notre bibliographie  :**
