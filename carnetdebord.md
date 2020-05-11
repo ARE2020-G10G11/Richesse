@@ -11,23 +11,21 @@ Nous avons commencé par une recherche web « répartition des richesses » qui 
 
 ## Évaluation des sources
 
-Source 1 : « Gravir l’échelle sociale est plus aisé en Ile-de-France qu’en province », INSEE ANALYSES ILE-DE-FRANCE, N°50, 15 décembre 2016
+**Source 1** : « Gravir l’échelle sociale est plus aisé en Ile-de-France qu’en province », INSEE ANALYSES ILE-DE-FRANCE, N°50, 15 décembre 2016
 
 https://www.insee.fr/fr/statistiques/2529731#documentation
 
 Cette étude de l'INSEE compare la catégorie socioprofessionnelle de deux générations d'individus à celle de leurs parents à la naissance. En comparant les générations 67-76 et 80-89 sur les tranches d'âges respectives de 23 et 32 ans, l'étude propose une étude de l'évolution de la mobilité sociale intergénérationnelle, en comparant symétriquement ces générations en province et en Ile-de-France. Elle est publiée dans, INSEE ANALYSES ILE-DE-FRANCE, collection de l'institut national de la statistique et des études économiques. Ayant publié beaucoup d'études sur des sujets similaires qui prennent source dans l'échantillon démographique permanant (EDP) cela permet de suivre des trajectoires individuelles dans le temps. Cet échantillon compile depuis 1968 l'ensemble des informations disponibles dans deux sources, les informations du recensement de population, et d'autre part les bulletins statistiques d'état civil reçus par l'INSEE.
 
 
-Source 2 : « Géographie de l'ascension sociale », France Stratégie, 6 Novembre 2015
+**Source 2** : « Géographie de l'ascension sociale », France Stratégie, 6 Novembre 2015
 
 https://www.strategie.gouv.fr/publications/geographie-de-lascension-sociale
 
-Il s’agit d'une note d'analyse, comparant les chances d'ascension sociale selon le département d'origine des différents individus. Cette note d'analyse est une synthèse du document de travail « La géographie de l'ascenseur social français » de Clément Dherbécourt, ancien élève d'Ulm et actuellement docteur en économie de l'école d'économie de Paris, il est un chef de projets à France Stratégie ayant travaillé sur des questions d'inégalité, de mobilité sociale, et de transmissions intergénérationnelles. Il a pris sources pour son étude dans de nombreuses études américaines et françaises, comme on peut le voir dans la bibliographie de son dossier de travail, avec par exemple des études de Raj Chetty et de Nathaniel Hendren, deux professeurs d'économie de Harvard ou encore de Richard Breen, professeur de sociologie à Oxford (exemples pour R. Chetty et N. Hendren : « the impact of neighborhoods on international mobility : childhood exposure effects and country level estimates » pour Breen R : Social Mobility in Europe, Oxford University Press)
-    
-Clément Dherbécourt a donc effectué un dossier solidement appuyé d'études de grands académiciens anglais et outre-atlantique tout en ayant lui-même une formation complète dans le sujet.
+Il s’agit d'une note d'analyse, comparant les chances d'ascension sociale selon le département d'origine des différents individus. Cette note d'analyse est une synthèse du document de travail « La géographie de l'ascenseur social français » de Clément Dherbécourt, ancien élève d'Ulm et actuellement docteur en économie de l'école d'économie de Paris, il est un chef de projets à France Stratégie ayant travaillé sur des questions d'inégalité, de mobilité sociale, et de transmissions intergénérationnelles. Il a pris sources pour son étude dans de nombreuses études américaines et françaises, comme on peut le voir dans la bibliographie de son dossier de travail, avec par exemple des études de Raj Chetty et de Nathaniel Hendren, deux professeurs d'économie de Harvard ou encore de Richard Breen, professeur de sociologie à Oxford (exemples pour R. Chetty et N. Hendren : « the impact of neighborhoods on international mobility : childhood exposure effects and country level estimates » pour Breen R : Social Mobility in Europe, Oxford University Press). Clément Dherbécourt a donc effectué un dossier solidement appuyé d'études de grands académiciens anglais et outre-atlantique tout en ayant lui-même une formation complète dans le sujet.
 
 
-Source 9 : A. Direr et T.Weitzenblum, « Modéliser la distribution des richesses en France », Annales d’économie et de statistique n°82, avril-juin 2006, pp. 151-86
+**Source 9** : A. Direr et T.Weitzenblum, « Modéliser la distribution des richesses en France », Annales d’économie et de statistique n°82, avril-juin 2006, pp. 151-86
 
 https://www.jstor.org/stable/20079155?read-now=1&seq=2#metadata_info_tab_contents
 
