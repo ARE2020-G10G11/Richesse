@@ -110,6 +110,3 @@ A contrario, la promotion sociale pour les enfants de père employé, mais surto
 
 ![alt text](https://raw.githubusercontent.com/ARE2020-G10G11/Richesse/master/articleundeux.png)
 
-
-## Carnet de bord: <a href="carnetdebord.html"> C'est ici ! </a>
-
