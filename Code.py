@@ -2,7 +2,7 @@
 
 #type Individu = tuple[int,tuple[int,int],int,float]
 
-"""On appelera "ListeI
+"""On appelera "ListeMonde" les Liste de Liste d'Individu, qui correspond à chacune des Generations. On appelera "Couple" les listes contenant 2 Individu formant un Couple"""
 
 
 
