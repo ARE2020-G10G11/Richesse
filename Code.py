@@ -95,9 +95,9 @@ def CoefficientGini(Liste) :
 		B += (L2[i]+L2[i+1])/2	
 	return 1 - 2*Aire/Hauteur*Longeur
 
-
-
-
+def Probabilité(Individu1,Individu2) :
+	"""Individu*Individu -> float"""
+	return
 			 
 def ListeCouple(ListeIndividu) :
 	"""list[Individu]] -> list[list[Individu]]
@@ -136,7 +136,7 @@ def Simulation(G0,Itération) :
 		ListeMonde.append(Heredite(ListeMonde[len(ListeMonde)-1])
 	return ListeMonde
 
-def GraphsSalaires(ListeMonde) :
+def GraphSalaires(ListeMonde) :
 	""" list[list[Individu]] -> None
 	Affiche la population en salaire différentes générations"""
 	for ListeIndividu in ListeMonde :
@@ -146,27 +146,13 @@ def GraphsSalaires(ListeMonde) :
 	plt.legend(["G"+ str(i) for i in range(len(ListeMonde)]
 	plt.show()
 	return none
-	
 
-def CoeffGiniSalaireListeIndividu(L) :
-	"""list[Individu] -> float
-	Renvoie le coefficient de gini des salaires de la liste d'Individu"""
-	return CoeffGini((ListeSalaire(L))
-
-def EcartTypeSalaireListeIndividu(L) :
-	"""list[Individu] -> float
-	Renvoie l'écart type des salaires de la liste d'Individu"""
-	return EcartType(ListeSalaire(L))
-	
-def EcartTypeEtGiniParGeneration(L) :
-	"""list[list[Individu]] -> list[tuple[float,float]]
-	Renvoie l'écart Type et le coefficient de gini de chacune des generations"""
-	return [(EcartTypeSalaireListeIndividu(Lg),CoeffGiniSalaireListeIndividu(Lg)) for Lg in L]
-			 
-def PopulationSalaireParGeneration(L) :
-	"""list[list[Individu]] -> list[list[float]]
-	Renvoie la liste de la Population selon le salaire de chacune des generations"""
-	return [RangementCroissant(ListeSalaire(Lg)) for Lg in L]
-
-		
-	
+def GraphCoefficientGini(ListeMonde) :
+       """ list[list[Individu]] -> None
+       Affiche la population en salaire différentes générations"""
+       NombreGeneration = len(ListeMonde)
+       plt.plot([Generation for Generation in range(NombreGeneration)],[CoefficientGini(ListeSalaire(ListeIndividu)) for ListeIndividu in ListeMonde])
+       plt.plot([Generation for Generation in range(NombreGeneration)],[EcartType(ListeSalaire(ListeIndividu)) for ListeIndividu in ListeMonde])
+       plt.xlabel("Generation")
+       plt.legend(["CoefficientGini","EcartType"])
+       return none
