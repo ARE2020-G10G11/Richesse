@@ -70,7 +70,7 @@ def ArbreGenealogiqueGenerations(ListeMonde,Individiu,NombreDeGeneration) :
 def ListeArbreGenealogiqueNGeneration(ListeIndividu,NombreDeGeneration) :
 	"""list[list[Individu]]*Individu*int -> list[list[Individu]]
 	Renvoie la liste des l'arbre généalogique des individus de la génération i jusqu'à n générations en arrière"""
-	return [ArbreGenealogiqueNGenerations(ListeMonde,Individu,n) for Ind in L]
+	return [ArbreGenealogiqueGenerations(ListeMonde,Individu,n) for Individu in L]
 
 def SommeCumulée(Liste) :
 	"""list[float] -> list[float]
@@ -96,36 +96,25 @@ def CoefficientGini(Liste) :
 
 
 
-
-def EcartTypeEtGiniParGeneration(L) :
-	"""list[list[Individu]] -> list[tuple[float,float]]
-	Renvoie l'écart Type et le coefficient de gini de chacune des generations"""
-	return [(EcartTypeSalaireListeIndividu(Lg),CoeffGiniSalaireListeIndividu(Lg)) for Lg in L]
-
-def PopulationSalaireParGeneration(L) :
-	"""list[list[Individu]] -> list[list[float]]
-	Renvoie la liste de la Population selon le salaire de chacune des generations"""
-	return [RangementCroissant(ListeSalaire(Lg)) for Lg in L]
-
 			 
-def ListCouple(L) :
+def ListeCouple(ListeIndividu) :
 	"""list[Individu]] -> list[list[Individu]]
 	Renvoie la Liste des couples formées à partir de L"""
-	L3 = L[::]
-	L4 = []
-	while len(L3) > 1 :
-		for i in range(1,len(L3)) :
-			if > Probabilité(L3[0],L3[i]) :
-				L4.append([L3[0],L3[i]])
-				L3 = L3[2:i] + L3[i+1:]
-	return L4
+	ListeIndividu2 = ListeIndividu[::]
+	ListeCouple = []
+	while len(ListeIndividu2) > 1 :
+		for Position in range(1,len(ListeIndividu2)) :
+			if > Probabilité(ListeIndividu2[0],ListeIndividu2[Position]) :
+				ListeCouple.append([ListeIndividu2[0],ListeIndividu2[Position]])
+				ListeIndividu2 = ListeIndividu2[2:Position] + ListeIndividu2[Position+1:]
+	return ListeCouple
 		
 def NbEnfant(L) :
 	"""list[list[Individu]] -> int
 	Renvoie le aléatoirement le nombre d'enfant qu'auront les 2 individus de L""" 
 	
 
-def Heredite(L) :
+def Heredite(ListeIndividu) :
 	"""list[Individu] -> list[Individu]
 	Renvoie la liste de la génération suivante à partir de la génération donnée"""
 	LNouvelleGeneration = []
@@ -138,12 +127,15 @@ def Heredite(L) :
 			 LNouvelleGeneration.append(([len(LNouvelleGeneration),(Id1,Id2),SalaireEnfant(C,NbE)))
 			 
 			 
-def Simulation(G0,G) :
-	"""list[Individu]*int -> list[list[Individu]]
-	ListFinal = [G0]
-	for i in range(G) :
-	ListFinal.append(Heredite(ListFinal[len(ListFinal)-1])
-	return ListFinal
+def Simulation(G0,Itération) :
+	"""list[Individu]*int -> list[list[Individu]]"""
+	ListeMonde = [G0]
+	for i in range(Itération) :
+		ListeMonde.append(Heredite(ListeMonde[len(ListeMonde)-1])
+	return ListeMonde
+
+def Display(ListeMonde) :
+				  
 
 	
 	
@@ -158,8 +150,15 @@ def EcartTypeSalaireListeIndividu(L) :
 	Renvoie l'écart type des salaires de la liste d'Individu"""
 	return EcartType(ListeSalaire(L))
 	
-
-	
+def EcartTypeEtGiniParGeneration(L) :
+	"""list[list[Individu]] -> list[tuple[float,float]]
+	Renvoie l'écart Type et le coefficient de gini de chacune des generations"""
+	return [(EcartTypeSalaireListeIndividu(Lg),CoeffGiniSalaireListeIndividu(Lg)) for Lg in L]
+			 
+def PopulationSalaireParGeneration(L) :
+	"""list[list[Individu]] -> list[list[float]]
+	Renvoie la liste de la Population selon le salaire de chacune des generations"""
+	return [RangementCroissant(ListeSalaire(Lg)) for Lg in L]
 
 		
 	
