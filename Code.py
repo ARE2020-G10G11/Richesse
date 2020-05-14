@@ -14,6 +14,13 @@ def MinEtPos(Liste) :
 	for Position in range(len(Liste)) :
 		if len([Nombre for Nombre in Liste if Nombre<Liste[Position]]) == 0 :
 			return [Liste[Position],Position]
+		
+def MaxEtPos(Liste) :
+	"""list[float] -> list[float]
+	Renvoie le Minimum de la liste et sa Position dans celle-ci """
+	for Position in range(len(Liste)) :
+		if len([Nombre for Nombre in Liste if Nombre>Liste[Position]]) == 0 :
+			return [Liste[Position],Position]
 
 def RangementCroissant(Liste) :
 	"""list[float] -> list[float]
