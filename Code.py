@@ -5,6 +5,8 @@
 """On appelera "ListeMonde" les Liste de Liste d'Individu, qui correspond à chacune des Generations. On appelera "Couple" les listes contenant 2 Individu formant un Couple"""
 
 
+%matplotlib inline
+import matplotlib.pyplot as plt
 
 def MinEtPos(Liste) :
 	"""list[float] -> list[float]
