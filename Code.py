@@ -136,10 +136,16 @@ def Simulation(G0,Itération) :
 		ListeMonde.append(Heredite(ListeMonde[len(ListeMonde)-1])
 	return ListeMonde
 
-def Display(ListeMonde) :
-				  
-
-	
+def GraphsSalaires(ListeMonde) :
+	""" list[list[Individu]] -> None
+	Affiche la population en salaire différentes générations"""
+	for ListeIndividu in ListeMonde :
+		NombreIndividu = len(ListeIndividu)
+		plt.plot([Fraction/NombreIndividu for Fraction in range(1,NombreIndividu)],[RangementCroissant(ListeSalaire(ListeIndividu))])
+	plt.ylabel("Salaire")
+	plt.legend(["G"+ str(i) for i in range(len(ListeMonde)]
+	plt.show()
+	return none
 	
 
 def CoeffGiniSalaireListeIndividu(L) :
