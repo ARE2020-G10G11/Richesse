@@ -13,7 +13,7 @@ Paramètre :
 - T: Différence Salariale ou Généalogique à partir duquel la probabilité devient inférieure à 0.1*A (donc [-T,T] intervale de tolérance)
 
 
-**f = A*( FS*exp(1.5*(DifférenceSalaire)²/T) + FG*exp(1.5*(DifférenceSalaireParents)²/T) )**
+f = A*( FS*exp(1.5*(DifférenceSalaire)²/T) + FG*exp(1.5*(DifférenceSalaireParents)²/T) )
 
 
 Remplie toutes les conditions ✅
