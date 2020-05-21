@@ -1,3 +1,5 @@
+""" Le système dynamique de l'étude de la répartition des richesses se fera en créant aléatoirement des couples au sein de la population, en leur donnant un nombre de descendant aléatoire qui auront chacun un salaire avec lui aussi un facteur aléatoire. Bien que chacun de ces évenements qui définiront l'hérédité sont aléatoire, il est bien évident qu'il necessite, pour obtenir une simulation plus réaliste, de faire varier ce paramètre aléatoire en fonction des charactéristiques des individus, afin que ceux-ci est plus ou moins de chance d'entrer en couple avec X, avoir Y enfants ou obtenir Z salaire, selon leur charactéristique. On définira les charactéristiques de chaque individu ainsi : Son Salaire et les charactéristiques de Abre Généalogique ( soit le salaire de ses ascendants ). Une seule contrainte s'impose : On souhaite qu'en Moyenne l'effectif de la population soit constant. On devra donc s'arranger de telle manière que en moyenne la probabilité d'obtenir 1 enfant soit égale à celle d'en avoir 2"""
+
 """On identifie les Individus selon ces critères : Identifiant, 2 Parents, Génération, Salaire."""
 
 #type Individu = tuple[int,tuple[int,int],int,float]
