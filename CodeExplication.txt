@@ -16,9 +16,39 @@ Remplie toute les conditions.
 Probabilité pour un couple d'avoir 1,2 ou 3 enfants :
 Necessite :
 On souhaite que en Moyenne les couples aient 2 enfants, de telle manière que l'effectif de la population reste constant.
-Pour chaque couple on a P1(Individu) + P2(Individu) + P3(Individu) = 1 (on élimine les cas 0 et plus de 3 enfants)
-On souhaite :  Σ ( P1(Individu)*1 + P2(Individu)*2 + P3(Individu)*3 ) / N = 2
-Soit : Σ P1(Individu) / N = Σ P3(Individu) / N
+On appelle PX(Couple) la Probabilité du Couple d'avoir X enfants.
+Pour chaque couple on a :
+P1(Couple) + P2(Couple) + P3(Couple) = 1 (on élimine les cas 0 et plus de 3 enfants)
+donc :
+Σ ( P1(Couple) + P2(Couple) + P3(Couple) ) = N ( N est l'effectif des couples )
+On suppose : 
+P2(Couple) = constante = K (la probabilitée d'avoir 2 enfants est constante)
+On souhaite : 
+Σ ( P1(Couple)*1 + P2(Couple)*2 + P3(Couple)*3 ) / N = 2 ( Les couples ont 2 enfants en Moyenne )
+On obtient ce système :
+Σ P1(Couple) + Σ P3(Couple) = N(1-K)
+Σ P1(Couple) + 3*Σ P3(Couple) = 2N(1-K)
+duquel on déduit (Ligne 2 - 2*Ligne 1) :
+- Σ P1(Couple) + Σ P3(Couple) = 0
+ Σ ( -P1(Couple) +  P3(Couple) ) / N = 0
+
+Si P2(Couple) est constante, il suffit que en moyenne, les couples aient autant de chance d'avoir 1 enfant que d'en avoir 3.
+
+On cherche donc à construire les probabilités P1(Couple) et P3(Couple)
+On appelle S(Couple) le Salaire du couple.
+On a Σ (S(Couple)) / N  = M le salaire Moyen des Couples
+On a Σ (S(Couple)-M) = 0 = Σ (-S(Couple)+M)
+On peut faire intervenir 2 constantes quelconques A et B et on à l'égalité :
+( A*N + B*Σ (S(Couple)-M) ) / N = ( A*N + B*Σ (-S(Couple)+M) ) / N
+puis 
+Σ (A + B*(S(Couple)-M)) / N = Σ (A + B*(-S(Couple)+M)) / N
+Si on on appelle P1(Couple) = A + B*(S(Couple)-M) et P3(Couple) = A + B*(S(Couple)-M)
+On a bien Σ P(Couple) / N = P3(Couple) / N
+
+Or on obtient 
+
+
+
 
 Fonction de Probabilité [0,1] -> Salaire
 Necessite :
