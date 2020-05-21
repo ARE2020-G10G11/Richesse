@@ -116,4 +116,4 @@ A contrario, la promotion sociale pour les enfants de père employé, mais surto
 **Le Code :**
 
 
-<a href="CodeExplication.html"> - Explication du code </a>
+<a href="EC1.html"> - Explication du code </a>
