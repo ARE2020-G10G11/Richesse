@@ -4,13 +4,16 @@ Fonction paire : f(x) = f(-x), étant donné que la fonction prend en paramètre
 Lim f(x) x-> +-∞ = 0 On suppose que lorsque la différence de salaire tend à être grande, la probabilité d'être en couple aussi
 Paramètre :
 
-FG: Facteur Généalogique / Génétique
-FS: Facteur Salariale ( 1 - FG )
-A: Affinité = Probabilité lorsque Différence Salariale et Généalogique = 0 (lorsque invidu sont identique salarialement et genealogiquement)
-T: Différence Salariale ou Généalogique à partir duquel la probabilité devient inférieure à 0.1*A (donc [-T,T] intervale de tolérance)
+- FG: Facteur Généalogique / Génétique
+
+- FS: Facteur Salariale ( 1 - FG )
+
+- A: Affinité = Probabilité lorsque Différence Salariale et Généalogique = 0 (lorsque invidu sont identique salarialement et       genealogiquement)
+
+- T: Différence Salariale ou Généalogique à partir duquel la probabilité devient inférieure à 0.1*A (donc [-T,T] intervale de tolérance)
 
 
-f = A *( FS*exp(1.5*(DifférenceSalaire)²/T) + FG*exp(1.5*(DifférenceSalaireParents)²/T) )
+**f = A *( FS*exp(1.5*(DifférenceSalaire)²/T) + FG*exp(1.5*(DifférenceSalaireParents)²/T) )**
 
 
 Remplie toutes les conditions ✅
