@@ -28,7 +28,7 @@ On souhaite :  Σ ( P1(Individu)*1 + P2(Individu)*2 + P3(Individu)*3 ) / N = 2
 Soit: Σ P1(Individu) / N = Σ P3(Individu) / N
 
 
-**Fonction de Probabilité [0,1] -> Salaire:
+**Fonction de Probabilité [0,1] -> Salaire:**
 
 Generation 0:
 
