@@ -70,7 +70,6 @@ Le blog  qui répertorie notre travail au fil des semaines est <a href="blog.htm
 **10.** [La répartition des richesses](https://www.jstor.org/stable/40895014?seq=1)
 
 
-<a href="Code.html"> Voivi notre code ! </a>
 ## Article 1:
 
 - **Titre**: Gravir l'échelle sociale est plus aisé en Île-De-France qu'en province
