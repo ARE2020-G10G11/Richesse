@@ -22,15 +22,15 @@ P1(Couple) + P2(Couple) + P3(Couple) = 1 (on élimine les cas 0 et plus de 3 enf
 donc :
 Σ ( P1(Couple) + P2(Couple) + P3(Couple) ) = N ( N est l'effectif des couples )
 On suppose : 
-P2(Couple) = constante = K (la probabilitée d'avoir 2 enfants est constante)
+P2(Couple) = constante = P2 (la probabilitée d'avoir 2 enfants est constante)
 On souhaite : 
 Σ ( P1(Couple)*1 + P2(Couple)*2 + P3(Couple)*3 ) / N = 2 ( Les couples ont 2 enfants en Moyenne )
 On obtient ce système :
-Σ P1(Couple) + Σ P3(Couple) = N(1-K)
-Σ P1(Couple) + 3*Σ P3(Couple) = 2N(1-K)
+Σ P1(Couple) + Σ P3(Couple) = N(1-P2)
+Σ P1(Couple) + 3*Σ P3(Couple) = 2N(1-P2)
 duquel on déduit (Ligne 2 - 2*Ligne 1) :
 - Σ P1(Couple) + Σ P3(Couple) = 0
- Σ ( -P1(Couple) +  P3(Couple) ) / N = 0
+Σ P1(Couple) / N = Σ P3(Couple) / N
 
 Si P2(Couple) est constante, il suffit que en moyenne, les couples aient autant de chance d'avoir 1 enfant que d'en avoir 3.
 
@@ -43,10 +43,10 @@ On peut faire intervenir 2 constantes quelconques A et B et on à l'égalité :
 puis 
 Σ (A + B*(S(Couple)-M)) / N = Σ (A + B*(-S(Couple)+M)) / N
 Si on on appelle P1(Couple) = A + B*(S(Couple)-M) et P3(Couple) = A + B*(S(Couple)-M)
-On a bien Σ P(Couple) / N = P3(Couple) / N
+On a bien Σ P1(Couple) / N = Σ P3(Couple) / N
 
-Or on obtient 
-
+Or on obtient Σ P1(Couple) + Σ P3(Couple) = AN  = N(1-P2), on a donc necessairement A = 1-P2
+On paramètrera B de manière à ce qu'on ait toujours P1(Couple) et P3(Couple) ∈ [0,1] donc |B| ⩽ (1-P2)*Max(|S(Couple)-M|)
 
 
 
