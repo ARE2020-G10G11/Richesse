@@ -7,6 +7,7 @@
 
 %matplotlib inline
 import matplotlib.pyplot as plt
+import random
 
 def MinEtPos(Liste) :
 	"""list[float] -> list[float]
@@ -50,37 +51,6 @@ def EcartType(L)
 	Renvoie la Moyenne des Distances à la Moyenne"""
 	MoyenneL = Moyenne(L)
 	return Moyenne([(MoyenneL-i)**2 for i in L])**0.5
-
-def ListeSalaire(ListeIndividu) :
-	"""list[Individu] -> list[float]
-	Renvoie la liste des salaires de la liste d'individu"""
-	ListeSalaire = []
-	for Individu in ListeIndividu :
-		_,_,_,_,Salaire = Individu
-		ListeSalaire.append(Salaire)
-	return ListeSalaire
-
-def ArbreGenealogiqueGenerations(ListeMonde,Individiu,NombreDeGeneration) :
-	"""list[list[Individu]]*Individu*int -> list[Individu]
-	Renvoie la liste d'individu de l'arbre généalogique de Ind jusqu'à n générations en arrière"""
-	Identifiant,Parents,Generation,Salaire = Individu
-	Parent1,Parent2 = Parents
-	if Generation == 0 :
-		return []
-	else :
-		ListeParents = []
-		for Parent in ListeMonde[Generation-1] :
-			IdentifiantParent,_,_,_ = IndP
-			if IdP == P1 or IdP == P2 :
-				ListeParents.append(Parent)
-				
-	return ListeParents + ArbreGenealogiqueNGenerations(ListeMonde,ListeParent[0],NombreDeGeneration-1) + ArbreGenealogiqueNGenerations(ListeMonde,ListeParent[1],NombreDeGeneration-1)
-
-def ListeArbreGenealogiqueNGeneration(ListeIndividu,NombreDeGeneration) :
-	"""list[list[Individu]]*Individu*int -> list[list[Individu]]
-	Renvoie la liste des l'arbre généalogique des individus de la génération i jusqu'à n générations en arrière"""
-	return [ArbreGenealogiqueGenerations(ListeMonde,Individu,n) for Individu in L]
-
 def SommeCumulée(Liste) :
 	"""list[float] -> list[float]
 	Renvoie la liste en somme cumulée de la liste L"""
@@ -99,41 +69,85 @@ def CoefficientGini(Liste) :
 	Hauteur = Liste2[len(Liste2)-1]
 	Aire = Liste2[0]/2
 	for i in range(Longeur - 1) :
-		B += (L2[i]+L2[i+1])/2	
+		B += (Liste2[i]+Liste2[i+1])/2	
 	return 1 - 2*Aire/Hauteur*Longeur
 
-def Probabilité(Individu1,Individu2) :
-	"""Individu*Individu -> float"""
-	return
+def ListeSalaire(ListeIndividu) :
+	"""list[Individu] -> list[float]
+	Renvoie la liste des salaires de la liste d'individu"""
+	ListeSalaire = []
+	for Individu in ListeIndividu :
+		_,_,_,_,Salaire = Individu
+		ListeSalaire.append(Salaire)
+	return ListeSalaire
+
+def ArbreGenealogique(ListeMonde,Individiu,NombreDeGeneration) :
+	"""list[list[Individu]]*Individu*int -> list[Individu]
+	Renvoie la liste d'individu de l'arbre généalogique de Ind jusqu'à n générations en arrière"""
+	Identifiant,Parents,Generation,Salaire = Individu
+	Parent1,Parent2 = Parents
+	if Generation == 0 :
+		return []
+	else :
+		ListeParents = []
+		for Parent in ListeMonde[Generation-1] :
+			IdentifiantParent,_,_,_ = IndP
+			if IdP == P1 or IdP == P2 :
+				ListeParents.append(Parent)
+				
+	return ListeParents + ArbreGenealogique(ListeMonde,ListeParent[0],NombreDeGeneration-1) + ArbreGenealogique(ListeMonde,ListeParent[1],NombreDeGeneration-1)
+
+def ListeArbreGenealogiqueGeneration(ListeIndividu,ListeMonde,NombreDeGeneration) :
+	"""list[list[Individu]]*Individu*int -> list[list[Individu]]
+	Renvoie la liste des l'arbre généalogique des individus de la génération i jusqu'à n générations en arrière"""
+	return [ArbreGenealogique(ListeMonde,Individu,NombreDeGeneration) for Individu in ListeIndividu]
+
+
+
+def Probabilité(Individu1,Individu2,MSG1,ListeMonde,FacteurSalarial,Affinité,Tolerance,NombreDeGeneration) :
+	"""Individu*Individu*float*float*float*list[list[Individu]]*int -> float"""
+	_,_,_,S1 = Individu1
+	_,_,_,S2 = Individu2
+	
+	DiffSG = MSG1 - Moyenne(ListeSalaire(AbreGenealogique(ListeMonde,ListeIndividu2,NombreDeGeneration)))
+	
+	
+	return  Affinité*(FacteurSalarial*exp(1.5*(S1-S2)²/Tolerance)+(1-FacteurSalarial)*exp(1.5*(DiffSG)²/Tolerance))
 			 
-def ListeCouple(ListeIndividu) :
-	"""list[Individu]] -> list[list[Individu]]
+def ListeCouple(ListeIndividu,ListeMonde,FacteurSalariale,Affinité,Tolerance,NombreDeGeneration) :
+	"""list[Individu]]*list[list[Individu]*float* -> list[list[Individu]]
 	Renvoie la Liste des couples formées à partir de L"""
 	ListeIndividu2 = ListeIndividu[::]
 	ListeCouple = []
 	while len(ListeIndividu2) > 1 :
 		for Position in range(1,len(ListeIndividu2)) :
-			if > Probabilité(ListeIndividu2[0],ListeIndividu2[Position]) :
+			MSG1 = Moyenne(ListeSalaire(AbreGenealogique(ListeMonde,ListeIndividu2[0],NombreDeGeneration)))
+			if random.random() <= Probabilité(ListeIndividu2[0],ListeIndividu2[Position],MSGInd1,ListeMonde,FacteurSalarial,Affinité,Tolerance,NombreDeGeneration) :
 				ListeCouple.append([ListeIndividu2[0],ListeIndividu2[Position]])
 				ListeIndividu2 = ListeIndividu2[2:Position] + ListeIndividu2[Position+1:]
+				break
 	return ListeCouple
 		
-def NbEnfant(L) :
-	"""list[list[Individu]] -> int
-	Renvoie le aléatoirement le nombre d'enfant qu'auront les 2 individus de L""" 
+def NombredEnfant(Couple,Probabilité2Enfant,Moyenne,EcartMax) :
+	"""list[list[Individu]]*list[Individu] -> int
+	Renvoie aléatoirement le nombre d'enfant qu'auront les 2 individus de L"""
+	
 	
 
-def Heredite(ListeIndividu) :
-	"""list[Individu] -> list[Individu]
+def Heredite(ListeIndividu,ListeMonde,FacteurSalariale,Affinité,Tolerance,NombreDeGeneration,Probabilité2Enfant) :
+	"""list[Individu]*list[list[individu]]*float*float*float*int*float -> list[Individu]
 	Renvoie la liste de la génération suivante à partir de la génération donnée"""
 	LNouvelleGeneration = []
+	Population = RangementCroissant(ListeSalaire(ListeIndividu))
+	Moyenne = Moyenne(ListeSalaire(ListeIndividu))
+	EcartMax = MaxEtPos([abs(Salaire-Moyenne) for Salaire in ListeSalaire(ListeIndividu)])[0]
 	_,_,G,_ = L[0]
-	for C in ListCouple(L) :
-		NbE = NbEnfant(C)
+	for Couple in ListeCouple(ListeIndividu,ListeMonde,FacteurSalariale,Affinité,Tolerance,NombreDeGeneration) :
+		NombredEnfant = NombredEnfant(Couple,Probabilité2Enfant,Moyenne,EcartMax)
 		Id1,_,_,_ = C[0]
 		Id2,_,_,_ = C[1]
-		for i in range(NbE) :
-			 LNouvelleGeneration.append(([len(LNouvelleGeneration),(Id1,Id2),SalaireEnfant(C,NbE)))
+		for i in range(NombredEnfant) :
+			 LNouvelleGeneration.append(([len(LNouvelleGeneration),(Id1,Id2),G+1,SalaireEnfant(C,NombredEnfant)))
 			 
 			 
 def Simulation(G0,Itération) :
@@ -150,7 +164,7 @@ def GraphSalaires(ListeMonde) :
 		NombreIndividu = len(ListeIndividu)
 		plt.plot([Fraction/NombreIndividu for Fraction in range(1,NombreIndividu)],[RangementCroissant(ListeSalaire(ListeIndividu))])
 	plt.ylabel("Salaire")
-	plt.legend(["G"+ str(i) for i in range(len(ListeMonde)]
+	plt.legend(["G"+ str(i) for i in range(len(ListeMonde))]
 	plt.show()
 	return none
 
@@ -163,3 +177,20 @@ def GraphCoefficientGini(ListeMonde) :
        plt.xlabel("Generation")
        plt.legend(["CoefficientGini","EcartType"])
        return none
+
+def CreateurG0(Salaires,Pourcentages,OrdreDeGrandeur)
+       """ list[float]*list[float]*Int -> list[float]
+       Renvoie une génération 0 d'un certain ordre de grandeur à partir des Tableaux de Données entrés"""
+       ListeGeneration0 = []
+       NombreDindividu = 1
+       for Position in range(len(Pourcentages)-1) :
+	       (Pourcentages[Position+1]-Pourcentages[Position])10**(OrdreDeGrandeur) = Section
+	       for I in range(Section) :
+			G0.append((NombreDindividu,(0,0),0,Salaires[Position] + I*(Salaires[Position+1]-Salaires[Position])/Section)
+			NombreDindividu += 1
+	return ListeGeneration0
+					       
+					       
+	       
+	       
+	       
