@@ -108,10 +108,7 @@ def Probabilité(Individu1,Individu2,MSG1,ListeMonde,FacteurSalarial,Affinité,T
 	"""Individu*Individu*float*float*float*list[list[Individu]]*int -> float"""
 	_,_,_,S1 = Individu1
 	_,_,_,S2 = Individu2
-	
 	DiffSG = MSG1 - Moyenne(ListeSalaire(AbreGenealogique(ListeMonde,ListeIndividu2,NombreDeGeneration)))
-	
-	
 	return  Affinité*(FacteurSalarial*exp(1.5*(S1-S2)²/Tolerance)+(1-FacteurSalarial)*exp(1.5*(DiffSG)²/Tolerance))
 			 
 def ListeCouple(ListeIndividu,ListeMonde,FacteurSalariale,Affinité,Tolerance,NombreDeGeneration) :
@@ -129,8 +126,19 @@ def ListeCouple(ListeIndividu,ListeMonde,FacteurSalariale,Affinité,Tolerance,No
 	return ListeCouple
 		
 def NombredEnfant(Couple,Probabilité2Enfant,Moyenne,EcartMax) :
-	"""list[list[Individu]]*list[Individu] -> int
+	"""list[list[Individu]]*float*float*float -> int
 	Renvoie aléatoirement le nombre d'enfant qu'auront les 2 individus de L"""
+	_,_,_,S1 = Couple[0]
+	_,_,_,S2 = Couple[1]
+	Random = random.random()
+	if Random < Probabilité2Enfant :
+		return 2
+	elif Random < Random Probabilité2Enfant + (1-Probabilité2Enfant)/2 + ((S1+S2)/2 - Moyenne)*(1-Probabilité2Enfant)/(2*EcartMax) :
+		return 1
+	else :
+		return 3
+
+def SalaireEnfant(Couple,ListeMonde,Nombre)
 	
 	
 
@@ -144,10 +152,10 @@ def Heredite(ListeIndividu,ListeMonde,FacteurSalariale,Affinité,Tolerance,Nombr
 	_,_,G,_ = L[0]
 	for Couple in ListeCouple(ListeIndividu,ListeMonde,FacteurSalariale,Affinité,Tolerance,NombreDeGeneration) :
 		NombredEnfant = NombredEnfant(Couple,Probabilité2Enfant,Moyenne,EcartMax)
-		Id1,_,_,_ = C[0]
-		Id2,_,_,_ = C[1]
+		Id1,_,_,_ = Couple[0]
+		Id2,_,_,_ = Couple[1]
 		for i in range(NombredEnfant) :
-			 LNouvelleGeneration.append(([len(LNouvelleGeneration),(Id1,Id2),G+1,SalaireEnfant(C,NombredEnfant)))
+			 LNouvelleGeneration.append(([len(LNouvelleGeneration),(Id1,Id2),G+1,SalaireEnfant(Couple)))
 			 
 			 
 def Simulation(G0,Itération) :
