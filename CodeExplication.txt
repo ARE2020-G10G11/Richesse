@@ -58,10 +58,10 @@ Car on souhaite que les couples étant plus riches tendent à avoir moins d'enfa
 
 Fonction renvoyant le salaire de l'enfant selon un flottant aléatoire, le Salaire par Enfant du Couple et son Arbre Généalogique
 [0,1] -> Salaire
-On se munit de la courbe de répartition des salaire de la population, On centre l'intervalle sur le Salaire par Enfant et on fait varier sa taille selon l'écart type salariale de son arbre généalogique
+
 
 Generation 0 :
-Liste TRES GRANDE d'invidus pris des stats d'un pays pas très égal
+
 
 
 
