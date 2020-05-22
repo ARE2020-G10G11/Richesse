@@ -42,15 +42,15 @@ def Moyenne(Liste) :
     for Nombre in Liste :
       Somme += Nombre
     return Somme/len(Liste)
-
-def EcartType(L) :
+    
+def EcartType(Liste) :
 	"""list[float] -> float
   Renvoie la Moyenne des Distances à la Moyenne"""
-  if len(Liste) == 0 :
-    return 0
-  else :
-    MoyenneL = Moyenne(L)
-    return Moyenne([(MoyenneL-i)**2 for i in L])**0.5
+	if len(Liste) == 0 :
+	  return 0
+	else :
+		MoyenneListe = Moyenne(Liste)
+		return (Moyenne([(Nombre-MoyenneListe)**2 for Nombre in Liste]))**0.5
 
 def SommeCumulée(Liste) :
 	"""list[float] -> list[float]
@@ -87,13 +87,13 @@ def ArbreGenealogique(ListeMonde,Individu,NombreDeGeneration) :
 	Renvoie la liste d'individu de l'arbre généalogique de Ind jusqu'à n générations en arrière"""
 	Identifiant,Parents,Generation,Salaire = Individu
 	Parent1,Parent2 = Parents
-	if Generation == 0 :
+	if Generation == 0 or NombreDeGeneration == 0 :
 		return []
 	else :
 		ListeParents = []
 		for Parent in ListeMonde[Generation-1] :
 			IdentifiantParent,_,_,_ = Parent
-			if IdentifiantParent == Parent or IdentifiantParent == Parent2 :
+			if IdentifiantParent == Parent1 or IdentifiantParent == Parent2 :
 				ListeParents.append(Parent)
 				
 	return ListeParents + ArbreGenealogique(ListeMonde,ListeParents[0],NombreDeGeneration-1) + ArbreGenealogique(ListeMonde,ListeParents[1],NombreDeGeneration-1)
@@ -110,7 +110,7 @@ def Probabilité(Individu1,Individu2,MSG1,ListeMonde,FacteurSalarial,Affinité,T
 	_,_,_,S1 = Individu1
 	_,_,_,S2 = Individu2
 	DiffSG = MSG1 - Moyenne(ListeSalaire(ArbreGenealogique(ListeMonde,Individu2,NombreDeGeneration)))
-	return  Affinité*(FacteurSalarial*np.exp(1.5*(S1-S2)**2/Tolérance)+(1-FacteurSalarial)*np.exp(1.5*(DiffSG)**2/Tolérance))
+	return  Affinité*(FacteurSalarial*np.exp(1.5*((S1-S2)**2)/Tolérance)+(1-FacteurSalarial)*np.exp(1.5*(DiffSG**2)/Tolérance))
 			 
 def ListeCouple(ListeIndividu,ListeMonde,FacteurSalariale,Affinité,Tolérance,NombreDeGeneration) :
 	"""list[Individu]]*list[list[Individu]*float* -> list[list[Individu]]
@@ -140,7 +140,7 @@ def NombredEnfant(SalaireCouple,ProbabilitéDeuxEnfant,Moyenne,EcartMax) :
 def SalaireEnfant(SalaireParEnfant,Couple,ListeMonde,NombreDeGeneration,Population,SalaireMax,Effectif,Aide,Accessibilité) :
 	Centre = (np.arctan(SalaireParEnfant*(2+Accessibilité)/SalaireMax - Accessibilité)/(np.pi/2) + 1)*(1-Aide)/2
 	Random = random.random()
-	EcartTypeV = EcartType(ListeSalaire(Couple + ArbreGenealogique(Couple[0],ListeMonde,NombreDeGeneration-1)+ArbreGenealogique(Couple[1],ListeMonde,NombreDeGeneration-1)))
+	EcartTypeV = EcartType(ListeSalaire(Couple + ArbreGenealogique(ListeMonde,Couple[0],NombreDeGeneration-1)+ArbreGenealogique(ListeMonde,Couple[1],NombreDeGeneration-1)))
 	return Population[int(Centre*Effectif)] + (Random*2 - 1)*EcartTypeV
 	
   
