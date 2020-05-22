@@ -4,7 +4,8 @@
 
 """On appelera "ListeMonde" les Liste de Liste d'Individu, qui correspond à chacune des Generations. On appelera "Couple" les listes contenant 2 Individu formant un Couple"""
 
-
+import sys
+sys.setrecursionlimit(1000000)
 import matplotlib.pyplot as plt
 import numpy as np
 import random
@@ -26,11 +27,7 @@ def MaxEtPos(Liste) :
 def RangementCroissant(Liste) :
 	"""list[float] -> list[float]
 	Range la liste L dans l'odre croissant"""
-	if len(Liste) == 0 :
-		return []
-	else :
-		MinEtPosV = MinEtPos(Liste)
-		return [MinEtPosV[0]] + RangementCroissant(Liste[:MinEtPosV[1]]+Liste[MinEtPosV[1]+1:])
+  return np.sort(Liste)
 
 def Moyenne(Liste) :
   """list[float] -> float
@@ -38,19 +35,15 @@ def Moyenne(Liste) :
   if len(Liste) == 0 :
     return 0
   else :
-    Somme = 0
-    for Nombre in Liste :
-      Somme += Nombre
-    return Somme/len(Liste)
-    
+    return np.mean(Liste)
+
 def EcartType(Liste) :
 	"""list[float] -> float
   Renvoie la Moyenne des Distances à la Moyenne"""
 	if len(Liste) == 0 :
 	  return 0
 	else :
-		MoyenneListe = Moyenne(Liste)
-		return (Moyenne([(Nombre-MoyenneListe)**2 for Nombre in Liste]))**0.5
+		return np.std(Liste)
 
 def SommeCumulée(Liste) :
 	"""list[float] -> list[float]
