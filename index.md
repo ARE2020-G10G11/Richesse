@@ -118,6 +118,8 @@ A contrario, la promotion sociale pour les enfants de père employé, mais surto
 - **Type :** Article
 
 
+**Synthèse :**
+
 Le salaire moyen en France est de 2 240 euros net par mois pour un salarié travaillant à temps complet. Cela signifie qu’en moyenne, un salarié qui travaille à temps plein touche  2 240 euros net par mois.
 Le salaire médian en France, lui est de 1 800 euros net par mois. Cela signifie qu’il y autant de français qui touchent moins que ça que de français qui touchent plus de 1 800 euros. En d’autres termes, cela veut dire que 50% des français touchent un salaire inférieur à 1 800 €/mois et que les autres 50% des français touchent un salaire supérieur à 1 800€/mois.
 
@@ -127,7 +129,11 @@ Aux deux extrêmes, on compte environ 10% de français qui touchent moins de 1 2
 ![alt text](https://www.alternatives-economiques.fr/sites/default/files/public/media/20100501/A291053E.GIF)
 
 
-## Le Code :
 
+## Utilisation des différents articles:
+ 
+Les articles 1 et 11 nous ont permis de récupérer des données (chiffres et statistiques) utiles à la création du code afin de définir nos paramètres ( Article 1) et notre population 0 (Article 11). Les autres articles nous ont apporté des connaissances afin de mieux comprendre notre sujet et les différentes thématiques et problématiques liées à celui-ci.
+
+## Le Code :
 
 Le modèle mathématiques utilisé pour notre code est expliqué <a href="EC1.html">ici</a> .
