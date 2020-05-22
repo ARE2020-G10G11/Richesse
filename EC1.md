@@ -105,4 +105,4 @@ B représente les aides et l'éducation publique obligatoire, elle "assure" que 
 A représente le salaire à partir duquel une éducation plus qualitative (Privée et ou sur Paris/Grande Ville) est plus accessible.
 On souhaite que à les enfants avec un salaire/enfant maximum se retrouve avec un intervale centrée sur 0.9 et donc on souhaite K(Salaire/Enfant MAX) - A = 2 soit K = (2 + A) / Salaire/Enfant MAX
 
-Generation 0 :
+Pour la Génération 0, on utilise la répartition des salaires de 2016 selon l'insee.
