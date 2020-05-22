@@ -49,7 +49,6 @@ Le blog  qui répertorie notre travail au fil des semaines est <a href="blog.htm
 **Lien vers les sites de notre bibliographie  :**
 
 **1.** [La géographie de l'ascension sociale](https://www.strategie.gouv.fr/publications/geographie-de-lascension-sociale)
-[Gravir l'échelle sociale est plus aisé en Île-De-France qu'en province](https://www.insee.fr/fr/statistiques/2529731#documentation)
 
 **2.** [Gravir l'échelle sociale est plus aisé en Île-De-France qu'en province](https://www.insee.fr/fr/statistiques/2529731#documentation)
 
