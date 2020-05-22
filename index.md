@@ -10,7 +10,7 @@
 
 ## Problématique :
 
-**Comment varie l'ascension économique d'une population ?**
+**Comment évolue l'ascension économique d'une population ?**
 
 ## hypothèses :
 
