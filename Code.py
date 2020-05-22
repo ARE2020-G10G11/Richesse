@@ -7,6 +7,7 @@
 
 %matplotlib inline
 import matplotlib.pyplot as plt
+import numpy as np
 import random
 
 def MinEtPos(Liste) :
@@ -125,22 +126,22 @@ def ListeCouple(ListeIndividu,ListeMonde,FacteurSalariale,Affinité,Tolerance,No
 				break
 	return ListeCouple
 		
-def NombredEnfant(Couple,Probabilité2Enfant,Moyenne,EcartMax) :
+def NombredEnfant(SalaireCouple,Probabilité2Enfant,Moyenne,EcartMax) :
 	"""list[list[Individu]]*float*float*float -> int
 	Renvoie aléatoirement le nombre d'enfant qu'auront les 2 individus de L"""
-	_,_,_,S1 = Couple[0]
-	_,_,_,S2 = Couple[1]
 	Random = random.random()
 	if Random < Probabilité2Enfant :
 		return 2
-	elif Random < Random Probabilité2Enfant + (1-Probabilité2Enfant)/2 + ((S1+S2)/2 - Moyenne)*(1-Probabilité2Enfant)/(2*EcartMax) :
+	elif Random < Random Probabilité2Enfant + (1-Probabilité2Enfant)/2 + (SalaireCouple - Moyenne)*(1-Probabilité2Enfant)/(2*EcartMax) :
 		return 1
 	else :
 		return 3
 
-def SalaireEnfant(Couple,ListeMonde,NombreDeGeneration,Population,Effectif,Aide,Accessibilité) :
-	Centre = arctan(
-	
+def SalaireEnfant(SalaireParEnfant,Couple,ListeMonde,NombreDeGeneration,Population,SalaireMax,Effectif,Aide,Accessibilité) :
+	Centre = (arctan(SalaireParEnfant*(2+Accessibilité)/SalaireMax - Accessibilité)/(np.pi/2) + 1)*(1-Aide)/2
+	Random = random.random()
+	EcartType = EcartType(ListeSalaire(ArbreGenealogique(Couple[0],ListeMonde,NombreDeGeneration)+ArbreGenealogique(Couple[1],ListeMonde,NombreDeGeneration)))
+	return Max(Population[Maxint(Centre*Effectif)] + (Random*2 - 1)*EcartType
 	
 
 def Heredite(ListeIndividu,ListeMonde,FacteurSalariale,Affinité,Tolerance,NombreDeGeneration,Probabilité2Enfant,Aide,Accessibilité) :
@@ -152,14 +153,13 @@ def Heredite(ListeIndividu,ListeMonde,FacteurSalariale,Affinité,Tolerance,Nombr
 	Moyenne = Moyenne(ListeSalaire(ListeIndividu))
 	EcartMax = MaxEtPos([abs(Salaire-Moyenne) for Salaire in ListeSalaire(ListeIndividu)])[0]
 	SalaireMax = MaxEtPos(ListeSalaire(ListeIndividu))[0]
-	
 	_,_,G,_ = L[0]
 	for Couple in ListeCouple(ListeIndividu,ListeMonde,FacteurSalariale,Affinité,Tolerance,NombreDeGeneration) :
-		NombredEnfant = NombredEnfant(Couple,Probabilité2Enfant,Moyenne,EcartMax)
-		Id1,_,_,_ = Couple[0]
-		Id2,_,_,_ = Couple[1]
+		Id1,_,_,S1 = Couple[0]
+		Id2,_,_,S2 = Couple[1]
+		NombredEnfant = NombredEnfant((S1+S2)/2,Probabilité2Enfant,Moyenne,EcartMax)
 		for i in range(NombredEnfant) :
-			 LNouvelleGeneration.append(([len(LNouvelleGeneration),(Id1,Id2),G+1,SalaireEnfant(Couple,ListeMonde,NombreDeGeneration,Population,Effectif,Aide,Accessibilité)))
+			 LNouvelleGeneration.append(([len(LNouvelleGeneration),(Id1,Id2),G+1,SalaireEnfant((S1+S2)/NombredEnfant,Couple,ListeMonde,NombreDeGeneration,Population,SalaireMax,Effectif,Aide,Accessibilité)))
 			 
 			 
 def Simulation(G0,Itération) :
@@ -169,9 +169,9 @@ def Simulation(G0,Itération) :
 		ListeMonde.append(Heredite(ListeMonde[len(ListeMonde)-1])
 	return ListeMonde
 
-def GraphSalaires(ListeMonde) :
+def GraphPopulation(ListeMonde) :
 	""" list[list[Individu]] -> None
-	Affiche la population en salaire différentes générations"""
+	Affiche la population en salaire selon les différentes générations"""
 	for ListeIndividu in ListeMonde :
 		NombreIndividu = len(ListeIndividu)
 		plt.plot([Fraction/NombreIndividu for Fraction in range(1,NombreIndividu)],[RangementCroissant(ListeSalaire(ListeIndividu))])
@@ -180,14 +180,27 @@ def GraphSalaires(ListeMonde) :
 	plt.show()
 	return none
 
+def GraphEffectif(ListeMonde) :
+	""" list[list[Individu]] -> None
+	Affiche la population en salaire différentes générations"""
+	plt.plot([Generation for Generation in range(len(ListeMonde))],[len(ListeIndividu) for ListeIndividu in ListeMonde])
+	plt.ylabel("Effectif")
+	plt.xlabel("Generations")
+	plt.show()
+	return none
+
 def GraphCoefficientGini(ListeMonde) :
        """ list[list[Individu]] -> None
-       Affiche la population en salaire différentes générations"""
-       NombreGeneration = len(ListeMonde)
-       plt.plot([Generation for Generation in range(NombreGeneration)],[CoefficientGini(ListeSalaire(ListeIndividu)) for ListeIndividu in ListeMonde])
-       plt.plot([Generation for Generation in range(NombreGeneration)],[EcartType(ListeSalaire(ListeIndividu)) for ListeIndividu in ListeMonde])
-       plt.xlabel("Generation")
-       plt.legend(["CoefficientGini","EcartType"])
+       Affiche les coefficients de gini des différentes générations"""
+       plt.plot([Generation for Generation in range(len(ListeMonde)],[CoefficientGini(ListeSalaire(ListeIndividu)) for ListeIndividu in ListeMonde])
+       plt.xlabel("Generations")
+       return none
+
+def GraphEcartType(ListeMonde) :
+       """ list[list[Individu]] -> None
+       Affiche les EcartsType des différentes générations"""
+       plt.plot([Generation for Generation in range(len(ListeMonde))],[EcartType(ListeSalaire(ListeIndividu)) for ListeIndividu in ListeMonde])
+       plt.xlabel("Generations")
        return none
 
 def CreateurG0(Salaires,Pourcentages,OrdreDeGrandeur)
