@@ -63,6 +63,7 @@ Le blog  qui répertorie notre travail au fil des semaines est <a href="blog.htm
  
 **10.** [La répartition des richesses](https://www.jstor.org/stable/40895014?seq=1)
 
+**11** [La répartion des salaires en France](https://www.budgetbanque.fr/budget/repartition-salaires-france)
 
 ## Article 1:
 
@@ -106,6 +107,22 @@ A contrario, la promotion sociale pour les enfants de père employé, mais surto
 ![alt text](https://raw.githubusercontent.com/ARE2020-G10G11/Richesse/master/articleuntrois.png)
 
 ![alt text](https://raw.githubusercontent.com/ARE2020-G10G11/Richesse/master/articleundeux.png)
+
+
+## Article 11:
+
+**- Titre :** La répartion des salaires en France
+**- Auteur :**
+**- Type :** Article
+
+Le salaire moyen en France est de 2 240 euros net par mois pour un salarié travaillant à temps complet. Cela signifie qu’en moyenne, un salarié qui travaille à temps plein touche  2 240 euros net par mois.
+Le salaire médian en France, lui est de 1 800 euros net par mois. Cela signifie qu’il y autant de français qui touchent moins que ça que de français qui touchent plus de 1 800 euros. En d’autres termes, cela veut dire que 50% des français touchent un salaire inférieur à 1 800 €/mois et que les autres 50% des français touchent un salaire supérieur à 1 800€/mois.
+
+Aux deux extrêmes, on compte environ 10% de français qui touchent moins de 1 200 euros net par mois et plus de 10% de français qui touchent un salaire supérieur à 3 600 euros net par mois.
+
+ 
+![alt text](https://www.alternatives-economiques.fr/sites/default/files/public/media/20100501/A291053E.GIF)
+
 
 **Le Code :**
 
