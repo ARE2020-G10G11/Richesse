@@ -14,18 +14,18 @@
 
 ## hypothèses :
 
-- L'accès à une éduction de qualité ici symbolisée par les écoles privée qui sont accessibles pour les foyers possédant une bonne situation économique.
+- L'accès à une éduction de qualité est ici symbolisé par les écoles privées qui sont accessibles pour les foyers possédant une bonne situation économique.
 
-- L'éducation (scolaire) est le principal facteurs d'ascension sociale.
+- L'éducation (scolaire) est le principal facteur d'ascension sociale.
 
 ## Objectif :
 
-Déterminer les paramètres qui sont determinants dans l'ascension sociale et observer l'impact de ceux ci sur une populations données.
+Déterminer les paramètres qui sont déterminants dans l'ascension sociale et observer l'impact de ceux-ci sur une population donnée.
 
 
 ## Blog :
 
-Le blog  qui répertorie notre travail au fil des semaines est <a href="blog.html"> ici  </a>!
+Le blog qui répertorie notre travail au fil des semaines est <a href="blog.html"> ici  </a>!
 
 
 
@@ -74,7 +74,7 @@ Le blog  qui répertorie notre travail au fil des semaines est <a href="blog.htm
 
 **Synthèse :**
 
-L’accès au statut de cadre reste fortement déterminé par l’origine sociale
+L’accès au statut de cadre reste fortement déterminé par l’origine sociale.
 
 Entre 23 et 32 ans, seulement 13 % d’entre eux sont ouvriers alors que 36 % des pères étaient ouvriers à la naissance de leur enfant. C’est le cas pour un quart des enfants de professions intermédiaires mais seulement pour 15 % des enfants d’employés et d’ouvriers. Parmi ceux qui ont terminé leurs études, 45 % des enfants de cadres sont eux-mêmes cadres entre 23 et 32 ans, contre seulement un quart des enfants dont le père exerce une profession intermédiaire. Cette proportion tombe aux alentours de un pour dix pour les enfants d’employés et d’ouvriers . 
 
