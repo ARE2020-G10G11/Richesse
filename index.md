@@ -111,9 +111,12 @@ A contrario, la promotion sociale pour les enfants de père employé, mais surto
 
 ## Article 11:
 
-**- Titre :** La répartion des salaires en France
-**- Auteur :**
-**- Type :** Article
+- **Titre :** La répartion des salaires en France
+
+- **Auteur :**
+
+- **Type :** Article
+
 
 Le salaire moyen en France est de 2 240 euros net par mois pour un salarié travaillant à temps complet. Cela signifie qu’en moyenne, un salarié qui travaille à temps plein touche  2 240 euros net par mois.
 Le salaire médian en France, lui est de 1 800 euros net par mois. Cela signifie qu’il y autant de français qui touchent moins que ça que de français qui touchent plus de 1 800 euros. En d’autres termes, cela veut dire que 50% des français touchent un salaire inférieur à 1 800 €/mois et que les autres 50% des français touchent un salaire supérieur à 1 800€/mois.
