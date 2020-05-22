@@ -26,7 +26,7 @@ Nous poursuivons le développement du code et codons le maximum de paramètre da
 
 Nous continuons à avancer sur le code cette semaine nous avons commencé à réfléchir à la possibilité de rajouter un paramètre spatial à la suite de la lecture d'un article qui mettait en lien la situation géographique d'une population et sa situation socio/économique. Cela risque de rajouter de la complexité à notre code ( à voir comment nous intègrerons cette partie du code et comment nous la paramètrerons, rien n'a été encore décidé et nous n'avons pas encore fixé les paramètres ) cependant cela le rendra plus réaliste.
 
-### Semaine 6
+### Semaine 7
 
 Le code est presque terminé. Il ne reste plus qu'à chosir les différents paramètres et observer comment la population évolue selon ceux ci. On cherchera notament les paramètres necessaire pour que la population ateigne un coefficient de Gini "Objectif" à partir de 5 generations. Chaque individu est codé par : son identifiant, ses parents, sa génération et son salaire, et les paramètres qui régissent l'hérédité (formation de la nouvelle génération à partir de la precedente) sont : la Génération 0, la probabilité de 2 individu selectionné à être en couple selon leur salaire et ascendant, la probabilité d'avoir 1, 2 ou 3 enfants selon le salaire des parents (on souhaite que la population ait 2 enfant en moyenne pour que celle-ci soit stable en effectif), la probabilité de chaque enfnat d'avoir un salaire X selon leurs parents.
 
