@@ -58,7 +58,12 @@ Car on souhaite que les couples étant plus riches tendent à avoir moins d'enfa
 
 Fonction renvoyant le salaire de l'enfant selon un flottant aléatoire, le Salaire par Enfant du Couple et son Arbre Généalogique
 [0,1] -> Salaire
-
+Pour cela, on choisit un intervalle sur la répartition des salaires de la génération. Celui ci sera centré sur une portion dépendant du Salaire par Enfant des parents ( Facteur Social ), et sera d'une largeur égal à l'écart type de son arbre généalogique ( Facteur Génétique ). Une fois dans cet Intervalle on selectionne un salaire selon un nombre généré aléatoirement entre 0 et 1.
+En ce qui concerne le pourcentage sur laquelle l'intervalle est centrée, on souhaite que celle-ci ne tende pas vers 0 de manière à modélisé un "accès minimal à une éducation". On souhaite également qu'elle tende vers 1 (intervalle centrée sur les plus riches) lorsque le salaire par enfant des parents est vraiment élevé.
+On peut grossièrement approximer le centre de l'intervalle selon le salaire/enfant ainsi : (Arctan(Kx - A)/(τ/4) + 1 )*(1 - B)/2 + B
+B représente les aides et l'éducation publique obligatoire, elle "assure" que l'intervalle ne pourra pas être centrée sur une portion inférieure à B (et que la pauvretée extrême ne sera donc pas fatale)
+A représente le salaire à partir duquel une éducation plus qualitative (Privée et ou sur Paris/Grande Ville) est plus accessible.
+On souhaite que à les enfants avec un salaire/enfant maximum se retrouve avec un intervale centrée sur 0.9 et donc on souhaite K(Salaire/Enfant MAX) - A = 2 soit K = (2 + A) / Salaire/Enfant MAX
 
 Generation 0 :
 
