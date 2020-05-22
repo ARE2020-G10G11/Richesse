@@ -115,4 +115,4 @@ A contrario, la promotion sociale pour les enfants de père employé, mais surto
 **Le Code :**
 
 
-Le modèle mathématiques utilisé pour notre code est expliqué <a href="CodeExplication.html">ici</a>.
+Le modèle mathématiques utilisé pour notre code est expliqué <a href="EC1.html">ici</a>.
