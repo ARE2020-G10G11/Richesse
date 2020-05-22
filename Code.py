@@ -110,7 +110,7 @@ def Probabilité(Individu1,Individu2,MSG1,ListeMonde,FacteurSalarial,Affinité,T
 	_,_,_,S1 = Individu1
 	_,_,_,S2 = Individu2
 	DiffSG = MSG1 - Moyenne(ListeSalaire(ArbreGenealogique(ListeMonde,Individu2,NombreDeGeneration)))
-	return  Affinité*(FacteurSalarial*np.exp(1.5*((S1-S2)**2)/Tolérance)+(1-FacteurSalarial)*np.exp(1.5*(DiffSG**2)/Tolérance))
+	return  Affinité*(FacteurSalarial*np.exp(-1.5*((S1-S2)**2)/Tolérance)+(1-FacteurSalarial)*np.exp(-1.5*(DiffSG**2)/Tolérance))
 			 
 def ListeCouple(ListeIndividu,ListeMonde,FacteurSalariale,Affinité,Tolérance,NombreDeGeneration) :
 	"""list[Individu]]*list[list[Individu]*float* -> list[list[Individu]]
@@ -196,6 +196,7 @@ def GraphCoefficientGini(ListeMonde) :
        Affiche les coefficients de gini des différentes générations"""
        plt.plot([Generation for Generation in range(len(ListeMonde))],[CoefficientGini(ListeSalaire(ListeIndividu)) for ListeIndividu in ListeMonde])
        plt.xlabel("Generations")
+       plt.ylabel("CoefficientGini")
        return None
 
 def GraphEcartType(ListeMonde) :
@@ -203,6 +204,7 @@ def GraphEcartType(ListeMonde) :
        Affiche les EcartsType des différentes générations"""
        plt.plot([Generation for Generation in range(len(ListeMonde))],[EcartType(ListeSalaire(ListeIndividu)) for ListeIndividu in ListeMonde])
        plt.xlabel("Generations")
+       plt.ylabel("EcartType")
        return None
 
 def CreateurG0(Salaires,Pourcentages,OrdreDeGrandeur):
@@ -220,10 +222,8 @@ def CreateurG0(Salaires,Pourcentages,OrdreDeGrandeur):
 SalairesG0 = [800,1034,1099,1133,1149,1169,1188,1207,1225,1242,1257,1272,1287,1302,1317,1332,1346,1360,1374,1387,1400,1412,1425,1439,1452,1466,1479,1493,1506,1520,1534,1548,1562,1576,1591,1606,1621,1637,1652,1668,1685,1701,1718,1735,1753,1771,1789,1807,1826,1845,1865,1885,1906,1927,1949,1972,1995,2018,2043,2068,2095,2122,2150,2179,2209,2240,2273,2307,2343,2379,2418,2460,2503,2549,2599,2652,2709,2768,2832,2899,2971,3048,3133,3226,3329,3445,3575,3724,3899,4104,4354,4668,5081,5665,6597,8629,10500]
 PourcentagesG0 = [0] + [i/100 for i in range(5,101)]
 
-i = CreateurG0(SalairesG0,PourcentagesG0,3)
+i = CreateurG0(SalairesG0,PourcentagesG0,4)
 
-X = Simulation(i,3,0.8,0.5,500,2,1/3,1/3,2000)
-GraphEffectif(X)
-GraphEcartType(X)
+X = Simulation(i,3,0.8,0.5,1000,2,1/3,1/3,2000)
 GraphCoefficientGini(X)
 GraphPopulation(X)
