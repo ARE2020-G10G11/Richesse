@@ -127,7 +127,7 @@ Aux deux extrêmes, on compte environ 10% de français qui touchent moins de 1 2
 ![alt text](https://www.alternatives-economiques.fr/sites/default/files/public/media/20100501/A291053E.GIF)
 
 
-**Le Code :**
+## Le Code :
 
 
-Le modèle mathématiques utilisé pour notre code est expliqué <a href="EC1.html"> ici </a> .
+Le modèle mathématiques utilisé pour notre code est expliqué <a href="EC1.html">ici</a> .
