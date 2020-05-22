@@ -27,7 +27,7 @@ def MaxEtPos(Liste) :
 def RangementCroissant(Liste) :
 	"""list[float] -> list[float]
 	Range la liste L dans l'odre croissant"""
-  	return np.sort(Liste)
+	return np.sort(Liste)
 
 def Moyenne(Liste) :
 	"""list[float] -> float
