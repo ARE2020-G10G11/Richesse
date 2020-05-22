@@ -27,23 +27,24 @@ def MaxEtPos(Liste) :
 def RangementCroissant(Liste) :
 	"""list[float] -> list[float]
 	Range la liste L dans l'odre croissant"""
-  return np.sort(Liste)
+  	return np.sort(Liste)
 
 def Moyenne(Liste) :
-  """list[float] -> float
-  Renvoie la Moyenne de la liste"""
-  if len(Liste) == 0 :
-    return 0
-  else :
-    return np.mean(Liste)
+	"""list[float] -> float
+	Renvoie la Moyenne de la liste"""
+	if len(Liste) == 0 :
+		return 0
+	else :
+		return np.mean(Liste)
 
 def EcartType(Liste) :
 	"""list[float] -> float
-  Renvoie la Moyenne des Distances à la Moyenne"""
+	Renvoie la Moyenne des Distances à la Moyenne"""
 	if len(Liste) == 0 :
-	  return 0
+		return 0
 	else :
 		return np.std(Liste)
+
 
 def SommeCumulée(Liste) :
 	"""list[float] -> list[float]
