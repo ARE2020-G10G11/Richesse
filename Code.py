@@ -165,8 +165,8 @@ def Heredite(ListeIndividu,ListeMonde,FacteurSalariale,Affinité,Tolerance,Nombr
 def Simulation(G0,Itération) :
 	"""list[Individu]*int -> list[list[Individu]]"""
 	ListeMonde = [G0]
-	for i in range(Itération) :
-		ListeMonde.append(Heredite(ListeMonde[len(ListeMonde)-1])
+	for I in range(Itération) :
+		ListeMonde.append(Heredite(ListeMonde[I])
 	return ListeMonde
 
 def GraphPopulation(ListeMonde) :
@@ -209,11 +209,14 @@ def CreateurG0(Salaires,Pourcentages,OrdreDeGrandeur)
        ListeGeneration0 = []
        NombreDindividu = 1
        for Position in range(len(Pourcentages)-1) :
-	       (Pourcentages[Position+1]-Pourcentages[Position])10**(OrdreDeGrandeur) = Section
+	       int((Pourcentages[Position+1]-Pourcentages[Position])10**(OrdreDeGrandeur)) = Section
 	       for I in range(Section) :
 			G0.append((NombreDindividu,(0,0),0,Salaires[Position] + I*(Salaires[Position+1]-Salaires[Position])/Section)
 			NombreDindividu += 1
 	return ListeGeneration0
+
+SalairesG0 = [800,1034,1099,1133,1149,1169,1188,1207,1225,1242,1257,1272,1287,1302,1332,1346,1360,1374,1387,1400,1412,1425,1439,1452,1466,1479,1493,1506,1520,1534,1548,1562,1576,1591,1606,1621,1637,1652,1668,1685,1701,1718,1735,1753,1771,1789,1807,1826,1845,1865,1906,1927,1949,1972,1995,2018,2043,2068,2095,2122,2150,2179,2209,2240,2273,2307,2343,2379,2418,2460,2503,2549,2599,2652,2709,2768,2832,2899,2971,3048,3133,3226,3329,3445,3575,3724,3899,4104,4354,4668,5081,5665,6597,8629,10500]
+PourcentagesGP = [0] + [i/100 for i in range(5,101)]
 					       
 					       
 	       
