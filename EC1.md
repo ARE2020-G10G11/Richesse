@@ -11,10 +11,13 @@ Lim f(x) x-> +-∞ = 0. On suppose que lorsque la différence de salaire tend à
 
 Paramètre :
 
-FG : Facteur Généalogique / Génétique
-FS : Facteur Salariale ( 1 - FG )
-A : Affinité = Probabilité lorsque Différence Salariale et Généalogique = 0 (lorsque invidu sont identique salarialement et genealogiquement)
-T : Différence Salariale ou Généalogique à partir duquel la probabilité devient inférieure à 0.1*A (donc [-T,T] intervale de tolérance)
+- FG : Facteur Généalogique / Génétique
+
+- FS : Facteur Salariale ( 1 - FG )
+
+- A : Affinité = Probabilité lorsque Différence Salariale et Généalogique = 0 (lorsque invidu sont identique salarialement et genealogiquement)
+
+- T : Différence Salariale ou Généalogique à partir duquel la probabilité devient inférieure à 0.1*A (donc [-T,T] intervale de tolérance)
 
 **f = A *( FS*exp(1.5*(DifférenceSalaire)²/T) + FG*exp(1.5*(DifférenceSalaireParents)²/T) )**
 
@@ -28,39 +31,64 @@ Necessite :
 On souhaite que en Moyenne les couples aient 2 enfants, de telle manière que l'effectif de la population reste constant.
 On appelle PX(Couple) la Probabilité du Couple d'avoir X enfants.
 Pour chaque couple on a :
+
 P1(Couple) + P2(Couple) + P3(Couple) = 1 (on élimine les cas 0 et plus de 3 enfants)
+
 donc :
+
 Σ ( P1(Couple) + P2(Couple) + P3(Couple) ) = N ( N est l'effectif des couples )
+
 On suppose : 
+
 P2(Couple) = constante = P2 (la probabilitée d'avoir 2 enfants est constante)
+
 On souhaite : 
+
 Σ ( P1(Couple)*1 + P2(Couple)*2 + P3(Couple)*3 ) / N = 2 ( Les couples ont 2 enfants en Moyenne )
+
 On obtient ce système :
-Σ P1(Couple) + Σ P3(Couple) = N(1-P2)
-Σ P1(Couple) + 3*Σ P3(Couple) = 2N(1-P2)
+
+- Σ P1(Couple) + Σ P3(Couple) = N(1-P2)
+
+- Σ P1(Couple) + 3*Σ P3(Couple) = 2N(1-P2)
+
 duquel on déduit (Ligne 2 - 2*Ligne 1) :
+
 - Σ P1(Couple) + Σ P3(Couple) = 0
 
-Σ P1(Couple) / N = Σ P3(Couple) / N
+- Σ P1(Couple) / N = Σ P3(Couple) / N
 
 Si P2(Couple) est constante, il suffit que en moyenne, les couples aient autant de chance d'avoir 1 enfant que d'en avoir 3.
 
-On cherche donc à construire les probabilités P1(Couple) et P3(Couple)
-On appelle S(Couple) le Salaire du couple.
-On a Σ (S(Couple)) / N  = M le salaire Moyen des Couples
+On cherche donc à construire les probabilités P1(Couple) et P3(Couple). On appelle S(Couple) le Salaire du couple.
+
+On a Σ (S(Couple)) / N  = M (le salaire Moyen des Couples).
+
 On a Σ (S(Couple)-M) = 0 = Σ (-S(Couple)+M)
+
 On peut faire intervenir 2 constantes quelconques A et B et on à l'égalité :
+
 ( A*N + B*Σ (S(Couple)-M) ) / N = ( A*N + B*Σ (-S(Couple)+M) ) / N
-puis 
+
+( A*N + B*Σ (S(Couple)-M) ) / N = ( A*N + B*Σ (-S(Couple)+M) ) / N
+
+puis
+
 Σ (A + B*(S(Couple)-M)) / N = Σ (A + B*(-S(Couple)+M)) / N
+
 Si on on appelle P1(Couple) = A + B*(S(Couple)-M) et P3(Couple) = A + B*(S(Couple)-M)
+
 On a bien Σ P1(Couple) / N = Σ P3(Couple) / N
 
-Or on obtient Σ P1(Couple) + Σ P3(Couple) = 2AN  = N(1-P2), on a donc necessairement A = (1-P2)/2
+Or on obtient Σ P1(Couple) + Σ P3(Couple) = 2AN  = N(1-P2), on a donc necessairement A = (1-P2)/2.
+
 On paramètrera B de manière à ce qu'on ait toujours P1(Couple) et P3(Couple) ∈ [0,1] donc |B| ⩽ (1-P2)/(2*Max(|S(Couple)-M|))
 avec B > 0 on a :
+
 P1(Couple) = (1-P2)/2 + (S(Couple)-M)(1-P2)/(2*Max(|S(Couple)-M|))
+
 P2(Couple) = (1-P2)/2 + (-S(Couple)+M)(1-P2)/(2*Max(|S(Couple)-M|))
+
 Car on souhaite que les couples étant plus riches tendent à avoir moins d'enfants et inversement.
 
 
