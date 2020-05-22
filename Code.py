@@ -30,27 +30,28 @@ def RangementCroissant(Liste) :
 		return []
 	else :
 		MinEtPosV = MinEtPos(Liste)
-		return [MinEtPos[0]] + RangementCroissant(Liste[:MinEtPosV[1]]+Liste[MinEtPosV[1]+1:])
+		return [MinEtPosV[0]] + RangementCroissant(Liste[:MinEtPosV[1]]+Liste[MinEtPosV[1]+1:])
 
 def Moyenne(Liste) :
-	"""list[float] -> float
-	Renvoie la Moyenne de la liste"""
-	Somme = 0
-	for Nombre in Liste :
-		Somme += Nombre
-	return Somme/len(Liste)
-
-def MoyenneDistMoyenne(Liste) :
-	"""list[float] -> float
-	Renvoie la Moyenne des Distances à la Moyenne"""
-	MoyenneListe = Moyenne(Liste)
-	return Moyenne([abs(MoyenneListe-Nombre) for Nombre in Liste])
+  """list[float] -> float
+  Renvoie la Moyenne de la liste"""
+  if len(Liste) == 0 :
+    return 0
+  else :
+    Somme = 0
+    for Nombre in Liste :
+      Somme += Nombre
+    return Somme/len(Liste)
 
 def EcartType(L) :
 	"""list[float] -> float
-	Renvoie la Moyenne des Distances à la Moyenne"""
-	MoyenneL = Moyenne(L)
-	return Moyenne([(MoyenneL-i)**2 for i in L])**0.5
+  Renvoie la Moyenne des Distances à la Moyenne"""
+  if len(Liste) == 0 :
+    return 0
+  else :
+    MoyenneL = Moyenne(L)
+    return Moyenne([(MoyenneL-i)**2 for i in L])**0.5
+
 def SommeCumulée(Liste) :
 	"""list[float] -> list[float]
 	Renvoie la liste en somme cumulée de la liste L"""
@@ -77,7 +78,7 @@ def ListeSalaire(ListeIndividu) :
 	Renvoie la liste des salaires de la liste d'individu"""
 	ListeSalaire = []
 	for Individu in ListeIndividu :
-		_,_,_,_,Salaire = Individu
+		_,_,_,Salaire = Individu
 		ListeSalaire.append(Salaire)
 	return ListeSalaire
 
@@ -139,7 +140,7 @@ def NombredEnfant(SalaireCouple,ProbabilitéDeuxEnfant,Moyenne,EcartMax) :
 def SalaireEnfant(SalaireParEnfant,Couple,ListeMonde,NombreDeGeneration,Population,SalaireMax,Effectif,Aide,Accessibilité) :
 	Centre = (np.arctan(SalaireParEnfant*(2+Accessibilité)/SalaireMax - Accessibilité)/(np.pi/2) + 1)*(1-Aide)/2
 	Random = random.random()
-	EcartTypeV = EcartType(ListeSalaire(ArbreGenealogique(Couple[0],ListeMonde,NombreDeGeneration)+ArbreGenealogique(Couple[1],ListeMonde,NombreDeGeneration)))
+	EcartTypeV = EcartType(ListeSalaire(Couple + ArbreGenealogique(Couple[0],ListeMonde,NombreDeGeneration-1)+ArbreGenealogique(Couple[1],ListeMonde,NombreDeGeneration-1)))
 	return Population[int(Centre*Effectif)] + (Random*2 - 1)*EcartTypeV
 	
   
@@ -151,7 +152,7 @@ def Heredite(ListeIndividu,ListeMonde,FacteurSalariale,Affinité,Tolérance,Nomb
   Population = RangementCroissant(ListeSalaire(ListeIndividu))
   Effectif = len(ListeIndividu)
   MoyenneV = Moyenne(ListeSalaire(ListeIndividu))
-  EcartMax = MaxEtPos([abs(Salaire-Moyenne) for Salaire in ListeSalaire(ListeIndividu)])[0]
+  EcartMax = MaxEtPos([abs(Salaire-MoyenneV) for Salaire in ListeSalaire(ListeIndividu)])[0]
   SalaireMax = MaxEtPos(ListeSalaire(ListeIndividu))[0]
   _,_,G,_ = ListeIndividu[0]
   for Couple in ListeCouple(ListeIndividu,ListeMonde,FacteurSalariale,Affinité,Tolérance,NombreDeGeneration) :
@@ -205,12 +206,12 @@ def GraphEcartType(ListeMonde) :
        return None
 
 def CreateurG0(Salaires,Pourcentages,OrdreDeGrandeur):
-  """ list[float]*list[float]*Int -> list[float]
+  """ list[float]*list[float]*Int -> list[Individu]
   Renvoie une génération 0 d'un certain ordre de grandeur à partir des Tableaux de Données entrés"""
   ListeGeneration0 = []
   NombredIndividu = 1
   for Position in range(len(Pourcentages)-1) :
-    Section = int((Pourcentages[Position+1]-Pourcentages[Position]))*10**(OrdreDeGrandeur)
+    Section = int((Pourcentages[Position+1]-Pourcentages[Position])*10**(OrdreDeGrandeur))
     for I in range(Section):
       ListeGeneration0.append((NombredIndividu,(0,0),0,Salaires[Position] + I*(Salaires[Position+1]-Salaires[Position])/Section))
       NombredIndividu += 1
@@ -218,3 +219,11 @@ def CreateurG0(Salaires,Pourcentages,OrdreDeGrandeur):
 
 SalairesG0 = [800,1034,1099,1133,1149,1169,1188,1207,1225,1242,1257,1272,1287,1302,1317,1332,1346,1360,1374,1387,1400,1412,1425,1439,1452,1466,1479,1493,1506,1520,1534,1548,1562,1576,1591,1606,1621,1637,1652,1668,1685,1701,1718,1735,1753,1771,1789,1807,1826,1845,1865,1885,1906,1927,1949,1972,1995,2018,2043,2068,2095,2122,2150,2179,2209,2240,2273,2307,2343,2379,2418,2460,2503,2549,2599,2652,2709,2768,2832,2899,2971,3048,3133,3226,3329,3445,3575,3724,3899,4104,4354,4668,5081,5665,6597,8629,10500]
 PourcentagesG0 = [0] + [i/100 for i in range(5,101)]
+
+i = CreateurG0(SalairesG0,PourcentagesG0,3)
+
+X = Simulation(i,3,0.8,0.5,500,2,1/3,1/3,2000)
+GraphEffectif(X)
+GraphEcartType(X)
+GraphCoefficientGini(X)
+GraphPopulation(X)
