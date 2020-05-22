@@ -138,24 +138,28 @@ def NombredEnfant(Couple,Probabilité2Enfant,Moyenne,EcartMax) :
 	else :
 		return 3
 
-def SalaireEnfant(Couple,ListeMonde,Nombre)
+def SalaireEnfant(Couple,ListeMonde,NombreDeGeneration,Population,Effectif,Aide,Accessibilité) :
+	Centre = arctan(
 	
 	
 
-def Heredite(ListeIndividu,ListeMonde,FacteurSalariale,Affinité,Tolerance,NombreDeGeneration,Probabilité2Enfant) :
+def Heredite(ListeIndividu,ListeMonde,FacteurSalariale,Affinité,Tolerance,NombreDeGeneration,Probabilité2Enfant,Aide,Accessibilité) :
 	"""list[Individu]*list[list[individu]]*float*float*float*int*float -> list[Individu]
 	Renvoie la liste de la génération suivante à partir de la génération donnée"""
 	LNouvelleGeneration = []
 	Population = RangementCroissant(ListeSalaire(ListeIndividu))
+	Effectif = len(ListeIndividu)
 	Moyenne = Moyenne(ListeSalaire(ListeIndividu))
 	EcartMax = MaxEtPos([abs(Salaire-Moyenne) for Salaire in ListeSalaire(ListeIndividu)])[0]
+	SalaireMax = MaxEtPos(ListeSalaire(ListeIndividu))[0]
+	
 	_,_,G,_ = L[0]
 	for Couple in ListeCouple(ListeIndividu,ListeMonde,FacteurSalariale,Affinité,Tolerance,NombreDeGeneration) :
 		NombredEnfant = NombredEnfant(Couple,Probabilité2Enfant,Moyenne,EcartMax)
 		Id1,_,_,_ = Couple[0]
 		Id2,_,_,_ = Couple[1]
 		for i in range(NombredEnfant) :
-			 LNouvelleGeneration.append(([len(LNouvelleGeneration),(Id1,Id2),G+1,SalaireEnfant(Couple)))
+			 LNouvelleGeneration.append(([len(LNouvelleGeneration),(Id1,Id2),G+1,SalaireEnfant(Couple,ListeMonde,NombreDeGeneration,Population,Effectif,Aide,Accessibilité)))
 			 
 			 
 def Simulation(G0,Itération) :
