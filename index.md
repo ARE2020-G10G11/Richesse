@@ -10,22 +10,17 @@
 
 ## Problématique :
 
-**L'environnement quotidien et culturelle d'un foyer lui permet il une amélioration significative de sa situation économique.**
+**Comment varie l'ascension économique d'une population ?**
 
 ## hypothèses :
 
-- Il faut qu'il y ait plus de 50% de favorisées dans l'entourage quotidien d'un défavorisé pour qu'il évolue dans l'échelle social.
+- L'accès à une éduction de qualité ici symbolisée par les écoles privée qui sont accessibles pour les foyers possédant une bonne situation économique.
 
-- Les écoles privés, facteur de discrimination diminue la présence de foyer favorisés dans l'entourage des défavorisés, diminuant leur chance de passer les échelons.
+- L'éducation (scolaire) est le principal facteurs d'ascension sociale.
 
 ## Objectif :
 
-Déterminer si un foyer peut s’élèver ( financièrement ) en moins de 6 génération. De plus nous espérons montrer qu'une famille défavorisée a beaucoup plus de chance d'accéder à un épanouissement économique élevé si elle est entourée de famille favorisée dans son environnement quotidien
-
-## Critères d'évaluations :
-
-Evaluer le nombre de génération que prend un foyer à effectuer une ascension sociale en fonction de la proportion de voisin favorisés.
-
+Déterminer les paramètres qui sont determinants dans l'ascension sociale et observer l'impact de ceux ci sur une populations données.
 
 
 ## Blog :
