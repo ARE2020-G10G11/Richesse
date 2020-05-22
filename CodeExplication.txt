@@ -46,8 +46,13 @@ puis
 Si on on appelle P1(Couple) = A + B*(S(Couple)-M) et P3(Couple) = A + B*(S(Couple)-M)
 On a bien Σ P1(Couple) / N = Σ P3(Couple) / N
 
-Or on obtient Σ P1(Couple) + Σ P3(Couple) = AN  = N(1-P2), on a donc necessairement A = 1-P2
-On paramètrera B de manière à ce qu'on ait toujours P1(Couple) et P3(Couple) ∈ [0,1] donc |B| ⩽ (1-P2)*Max(|S(Couple)-M|)
+Or on obtient Σ P1(Couple) + Σ P3(Couple) = 2AN  = N(1-P2), on a donc necessairement A = (1-P2)/2
+On paramètrera B de manière à ce qu'on ait toujours P1(Couple) et P3(Couple) ∈ [0,1] donc |B| ⩽ (1-P2)/(2*Max(|S(Couple)-M|))
+avec B > 0 on a :
+P1(Couple) = (1-P2)/2 + (S(Couple)-M)(1-P2)/(2*Max(|S(Couple)-M|))
+P2(Couple) = (1-P2)/2 + (-S(Couple)+M)(1-P2)/(2*Max(|S(Couple)-M|))
+Car on souhaite que les couples étant plus riches tendent à avoir moins d'enfants et inversement.
+
 
 
 
